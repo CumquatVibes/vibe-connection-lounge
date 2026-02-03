@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube | Vibe Connection Lounge</title>
+    <meta name="description" content="Watch transformational content, frequency healing, and spiritual guidance from Natural Mystic Frequencies.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vibe-teal': '#41e0d0',
+                        'vibe-teal-dark': '#0D9488',
+                        'vibe-purple': '#442e66',
+                        'vibe-purple-dark': '#2d1e44',
+                        'vibe-orange': '#ffb088',
+                        'vibe-orange-dark': '#eb7e43',
+                        'vibe-gold': '#ffb606',
+                        'vibe-cream': '#FAF8F3',
+                    },
+                    fontFamily: {
+                        'serif': ['Lusitana', 'Georgia', 'serif'],
+                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lusitana', serif;
+        }
+
+        .transition-all {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+
+        .palm-leaf {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-vibe-cream">
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <span class="text-2xl font-serif font-bold">
+                        <span class="text-vibe-purple italic">Vibe</span>
+                        <span class="text-gray-800"> Connection Lounge</span>
+                    </span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#mission" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mission</a>
+                    <a href="index.html#mentorship" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mentorship</a>
+                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Bazaar</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Blog</a>
+                    <a href="youtube.html" class="text-vibe-purple hover:text-vibe-purple-dark transition-colors font-bold">YouTube</a>
+                    <a href="about.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">About</a>
+                </div>
+                <div class="flex gap-3">
+                    <a href="index.html#subscribe" class="hidden sm:inline-block bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-medium shadow-lg">
+                        Join Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Caribbean Vibes -->
+    <section class="bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white py-20 relative overflow-hidden">
+        <!-- Palm Leaves Background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="absolute top-10 left-0 w-64 h-64 text-vibe-teal" fill="currentColor" viewBox="0 0 100 100">
+                <path d="M50,10 Q30,30 20,50 Q30,70 50,90 L50,10 Z" opacity="0.3"/>
+                <path d="M50,10 Q70,30 80,50 Q70,70 50,90 L50,10 Z" opacity="0.3"/>
+            </svg>
+            <svg class="absolute bottom-10 right-0 w-96 h-96 text-vibe-orange rotate-180" fill="currentColor" viewBox="0 0 100 100">
+                <path d="M50,10 Q30,30 20,50 Q30,70 50,90 L50,10 Z" opacity="0.3"/>
+                <path d="M50,10 Q70,30 80,50 Q70,70 50,90 L50,10 Z" opacity="0.3"/>
+            </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Natural Mystic Frequencies</h1>
+            <p class="text-xl md:text-2xl mb-4">Healing frequencies, spiritual wisdom & transformational content</p>
+            <p class="text-lg text-white/80 mb-8">Subscribe for weekly doses of elevation</p>
+            <a href="https://www.youtube.com/@NaturalMysticFrequencies" target="_blank" class="inline-block bg-red-600 text-white px-10 py-4 rounded-full hover:bg-red-700 transition-all hover-lift font-semibold text-lg shadow-2xl">
+                Subscribe on YouTube
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Videos Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-vibe-purple mb-16">Featured Videos</h2>
+
+            <!-- Most Popular, Newest, Longest -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Most Popular Video -->
+                <div class="bg-vibe-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-vibe-gold/30 to-vibe-orange/30 p-4 text-center">
+                        <span class="inline-block bg-vibe-gold text-white text-xs font-bold px-4 py-2 rounded-full">
+                            🔥 MOST POPULAR
+                        </span>
+                    </div>
+                    <div class="aspect-video bg-gray-900">
+                        <!-- Replace VIDEO_ID_HERE with actual YouTube video ID -->
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+                            title="Most Popular Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Video Title Here</h3>
+                        <p class="text-sm text-gray-600">Brief description of the video content...</p>
+                    </div>
+                </div>
+
+                <!-- Newest Video -->
+                <div class="bg-vibe-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-vibe-teal/30 to-vibe-purple/30 p-4 text-center">
+                        <span class="inline-block bg-vibe-teal text-white text-xs font-bold px-4 py-2 rounded-full">
+                            ✨ NEWEST
+                        </span>
+                    </div>
+                    <div class="aspect-video bg-gray-900">
+                        <!-- Replace VIDEO_ID_HERE with actual YouTube video ID -->
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+                            title="Newest Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Video Title Here</h3>
+                        <p class="text-sm text-gray-600">Brief description of the video content...</p>
+                    </div>
+                </div>
+
+                <!-- Longest Video -->
+                <div class="bg-vibe-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-vibe-purple/30 to-vibe-orange/30 p-4 text-center">
+                        <span class="inline-block bg-vibe-purple text-white text-xs font-bold px-4 py-2 rounded-full">
+                            ⏱️ LONGEST
+                        </span>
+                    </div>
+                    <div class="aspect-video bg-gray-900">
+                        <!-- Replace VIDEO_ID_HERE with actual YouTube video ID -->
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+                            title="Longest Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Video Title Here</h3>
+                        <p class="text-sm text-gray-600">Brief description of the video content...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Videos Grid -->
+    <section class="py-20 bg-vibe-cream relative overflow-hidden">
+        <!-- Caribbean Nature Elements -->
+        <div class="absolute top-20 right-0 w-32 h-32 opacity-5">
+            <svg viewBox="0 0 100 100" fill="currentColor" class="text-vibe-teal">
+                <circle cx="50" cy="50" r="40"/>
+                <path d="M50,10 L60,45 L95,45 L67,65 L77,100 L50,80 L23,100 L33,65 L5,45 L40,45 Z" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-vibe-purple mb-4">All Videos</h2>
+            <p class="text-center text-gray-600 mb-12">Explore our complete library of healing frequencies and wisdom</p>
+
+            <!-- Video Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Video Card Template (Repeat for each video) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="aspect-video bg-gray-900">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+                            title="Video Title"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-base font-bold text-gray-900 mb-2">Video Title Here</h3>
+                        <p class="text-xs text-gray-500">Duration • Views</p>
+                    </div>
+                </div>
+
+                <!-- Add more video cards as needed -->
+
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-12">
+                <a href="https://www.youtube.com/@NaturalMysticFrequencies/videos" target="_blank" class="inline-block bg-vibe-purple text-white px-10 py-4 rounded-full hover:bg-vibe-purple-dark transition-all hover-lift font-semibold text-lg shadow-lg">
+                    View All on YouTube →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe CTA -->
+    <section class="py-20 bg-gradient-to-br from-vibe-orange to-vibe-orange-dark text-white relative overflow-hidden">
+        <!-- Tropical Background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute bottom-0 left-0 w-full h-48">
+                <svg viewBox="0 0 1200 200" fill="currentColor" class="w-full h-full">
+                    <path d="M0,100 Q150,50 300,100 T600,100 T900,100 T1200,100 L1200,200 L0,200 Z" opacity="0.5"/>
+                    <ellipse cx="200" cy="150" rx="80" ry="40" opacity="0.3"/>
+                    <ellipse cx="600" cy="140" rx="100" ry="50" opacity="0.3"/>
+                    <ellipse cx="1000" cy="160" rx="90" ry="45" opacity="0.3"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-5xl md:text-6xl font-bold mb-6">Stay Connected</h2>
+            <p class="text-xl mb-10">Subscribe to Natural Mystic Frequencies for weekly transformational content</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.youtube.com/@NaturalMysticFrequencies?sub_confirmation=1" target="_blank" class="bg-white text-vibe-orange px-10 py-5 rounded-full hover:bg-gray-100 transition-all hover-lift font-bold text-lg shadow-2xl">
+                    Subscribe on YouTube
+                </a>
+                <a href="index.html#subscribe" class="bg-transparent border-2 border-white text-white px-10 py-5 rounded-full hover:bg-white hover:text-vibe-orange transition-all hover-lift font-bold text-lg">
+                    Join Our Community
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">
+                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                    </h3>
+                    <p class="text-gray-400 mb-4">Empower Your Mind, Body & Soul</p>
+                    <a href="https://richardabreu.studio" target="_blank" class="inline-block text-xs text-gray-500 hover:text-vibe-orange transition-colors border border-gray-700 hover:border-vibe-orange px-3 py-1 rounded-full">
+                        created by richardabreu.studio
+                    </a>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#mentorship" class="hover:text-vibe-teal transition-colors">Mentorship</a></li>
+                        <li><a href="index.html#bazaar" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="blog.html" class="hover:text-vibe-teal transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#giving-circle" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
+                        <li><a href="youtube.html" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
+                        <li><a href="about.html" class="hover:text-vibe-teal transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Vendors</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
