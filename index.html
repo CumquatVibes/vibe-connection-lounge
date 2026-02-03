@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Connection Lounge | Where Entrepreneurs Build Momentum</title>
+    <meta name="description" content="A curated space for community, networking, and commerce. Join the Vibe Connection Lounge marketplace for mind, body & soul.">
+    <meta name="keywords" content="entrepreneur community, wellness marketplace, business networking, vibe bazaar">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vibe Connection Lounge">
+    <meta property="og:description" content="Where entrepreneurs build momentum. A curated space for community, networking, and commerce.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vibeconnectionlounge.com">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vibe-teal': '#14B8A6',
+                        'vibe-teal-dark': '#0D9488',
+                        'vibe-cream': '#FAF8F3',
+                        'vibe-sage': '#8B9F8E',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #14B8A6 0%, #0D9488 50%, #0F766E 100%);
+        }
+    </style>
+</head>
+<body class="bg-vibe-cream">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold">
+                        <span class="text-vibe-teal italic">Vibe</span>
+                        <span class="text-gray-800"> Connection Lounge</span>
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">Home</a>
+                    <a href="#bazaar" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">Bazaar</a>
+                    <a href="#giving-circle" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">Giving Circle</a>
+                    <a href="#youtube" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">YouTube</a>
+                    <a href="about.html" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">About</a>
+                </div>
+                <div>
+                    <a href="become-vendor.html" class="bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-colors font-medium">
+                        Become a Seller
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Where entrepreneurs<br>
+                    <span class="italic">build momentum.</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto">
+                    A curated space for community, networking, and commerce.<br>
+                    Discover your vibe.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#bazaar" class="bg-white text-vibe-teal px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-semibold text-lg shadow-xl">
+                        Explore the Bazaar
+                    </a>
+                    <a href="become-vendor.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-vibe-teal transition-all font-semibold text-lg">
+                        Start Selling
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vibe Bazaar Section -->
+    <section id="bazaar" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-gray-900 mb-4">Vibe Bazaar</h2>
+                <p class="text-xl text-vibe-teal font-medium mb-4">Curated Finds for Mind, Body & Soul</p>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Explore our handpicked collection of lifestyle essentials, digital tools, and wellness products.<br>
+                    Discover your vibe!
+                </p>
+            </div>
+
+            <!-- Product Categories Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Category 1 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 p-8 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Essential Oil Diffuser</h3>
+                        <p class="text-sm text-gray-700 mb-4">Calm & Soothe</p>
+                        <button class="bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-colors font-medium">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="aspect-square bg-gradient-to-br from-amber-100 to-amber-200 p-8 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Manifestation Journal</h3>
+                        <p class="text-sm text-gray-700 mb-4">Set Your Intentions</p>
+                        <button class="bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-colors font-medium">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 p-8 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Meditation Headphones</h3>
+                        <p class="text-sm text-gray-700 mb-4">Immersive Sound</p>
+                        <button class="bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-colors font-medium">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="aspect-square bg-gradient-to-br from-green-100 to-green-200 p-8 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Herbal Supplements</h3>
+                        <p class="text-sm text-gray-700 mb-4">Natural Wellness</p>
+                        <button class="bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-colors font-medium">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#bazaar" class="inline-flex items-center gap-2 bg-vibe-teal text-white px-8 py-4 rounded-full hover:bg-vibe-teal-dark transition-colors font-semibold text-lg">
+                    Shop All
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giving Circle Section -->
+    <section id="giving-circle" class="py-20 bg-vibe-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">The Giving Circle</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        We believe in growing together. The Giving Circle is our commitment to giving back—supporting causes that matter to our community.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        A portion of every sale in the Vibe Bazaar goes toward philanthropic initiatives that uplift entrepreneurs, small businesses, and underserved communities.
+                    </p>
+                    <a href="#" class="inline-block bg-vibe-teal text-white px-8 py-4 rounded-full hover:bg-vibe-teal-dark transition-colors font-semibold">
+                        Learn More About Our Impact
+                    </a>
+                </div>
+                <div class="bg-gradient-to-br from-vibe-teal to-vibe-teal-dark rounded-2xl p-12 text-white shadow-2xl">
+                    <div class="text-center">
+                        <div class="text-6xl font-bold mb-4">10%</div>
+                        <p class="text-xl mb-6">of proceeds support community initiatives</p>
+                        <div class="space-y-4 text-left">
+                            <div class="flex items-start gap-3">
+                                <span class="text-2xl">✓</span>
+                                <p>Entrepreneur grants and mentorship programs</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-2xl">✓</span>
+                                <p>Small business development resources</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-2xl">✓</span>
+                                <p>Community wellness initiatives</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaker Announcements Section -->
+    <section id="speakers" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
+                <p class="text-xl text-gray-600">Join us for powerful conversations with industry leaders</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Event Card -->
+                <div class="bg-vibe-cream rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-sm text-vibe-teal font-semibold mb-2">COMING SOON</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Speaker Series Launch</h3>
+                    <p class="text-gray-700 mb-6">
+                        We're bringing together thought leaders, entrepreneurs, and changemakers for intimate conversations about building momentum in business and life.
+                    </p>
+                    <a href="#" class="text-vibe-teal font-semibold hover:underline">Stay tuned for announcements →</a>
+                </div>
+
+                <!-- Event Card -->
+                <div class="bg-vibe-cream rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-sm text-vibe-teal font-semibold mb-2">NETWORKING</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Community Meetups</h3>
+                    <p class="text-gray-700 mb-6">
+                        Connect with fellow entrepreneurs in your area. Build relationships, share insights, and grow together in our vibrant community.
+                    </p>
+                    <a href="#" class="text-vibe-teal font-semibold hover:underline">Join the waitlist →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+    <section id="youtube" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Watch & Learn</h2>
+                <p class="text-xl text-gray-300">Insights, tutorials, and inspiration from the community</p>
+            </div>
+
+            <!-- YouTube videos will be embedded here -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-700 rounded-xl aspect-video flex items-center justify-center">
+                    <p class="text-gray-400">Latest Video Coming Soon</p>
+                </div>
+                <div class="bg-gray-700 rounded-xl aspect-video flex items-center justify-center">
+                    <p class="text-gray-400">Latest Video Coming Soon</p>
+                </div>
+                <div class="bg-gray-700 rounded-xl aspect-video flex items-center justify-center">
+                    <p class="text-gray-400">Latest Video Coming Soon</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-colors font-semibold">
+                    Subscribe on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-vibe-teal text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to vibe with us?</h2>
+            <p class="text-xl mb-10">Join the marketplace where your brand meets our community.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="become-vendor.html" class="bg-white text-vibe-teal px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-semibold text-lg">
+                    Become a Vendor
+                </a>
+                <a href="#bazaar" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-vibe-teal transition-all font-semibold text-lg">
+                    Start Shopping
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                    </h3>
+                    <p class="text-gray-400">Where entrepreneurs build momentum.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#giving-circle" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
+                        <li><a href="#speakers" class="hover:text-vibe-teal transition-colors">Events</a></li>
+                        <li><a href="#youtube" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Vendors</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
