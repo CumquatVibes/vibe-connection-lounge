@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Vibe Connection Lounge</title>
+    <meta name="description" content="Insights on wellness, spirituality, entrepreneurship, and personal growth from the Vibe Connection Lounge community.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vibe-teal': '#41e0d0',
+                        'vibe-teal-dark': '#0D9488',
+                        'vibe-purple': '#442e66',
+                        'vibe-purple-dark': '#2d1e44',
+                        'vibe-orange': '#ffb088',
+                        'vibe-orange-dark': '#eb7e43',
+                        'vibe-gold': '#ffb606',
+                        'vibe-cream': '#FAF8F3',
+                    },
+                    fontFamily: {
+                        'serif': ['Lusitana', 'Georgia', 'serif'],
+                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lusitana', serif;
+        }
+
+        .transition-all {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="bg-vibe-cream">
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <span class="text-2xl font-serif font-bold">
+                        <span class="text-vibe-purple italic">Vibe</span>
+                        <span class="text-gray-800"> Connection Lounge</span>
+                    </span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#mission" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mission</a>
+                    <a href="index.html#mentorship" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mentorship</a>
+                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Bazaar</a>
+                    <a href="blog.html" class="text-vibe-purple hover:text-vibe-purple-dark transition-colors font-bold">Blog</a>
+                    <a href="youtube.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">YouTube</a>
+                    <a href="about.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">About</a>
+                </div>
+                <div class="flex gap-3">
+                    <a href="index.html#subscribe" class="hidden sm:inline-block bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-medium shadow-lg">
+                        Join Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">The Lounge Blog</h1>
+            <p class="text-xl md:text-2xl mb-4">Insights on wellness, spirituality & growth</p>
+            <p class="text-lg text-white/80">Wisdom for the conscious entrepreneur</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-20 bg-vibe-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Featured Post -->
+            <div class="mb-16">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all hover-lift">
+                    <div class="grid md:grid-cols-2 gap-0">
+                        <div class="bg-gradient-to-br from-vibe-teal/20 to-vibe-purple/20 p-12 flex items-center justify-center">
+                            <div class="text-8xl">🧘‍♀️</div>
+                        </div>
+                        <div class="p-12">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="bg-vibe-orange text-white text-xs font-bold px-3 py-1 rounded-full">FEATURED</span>
+                                <span class="text-sm text-gray-500">5 min read</span>
+                            </div>
+                            <h2 class="text-4xl font-bold text-vibe-purple mb-4">The Power of Morning Rituals for Entrepreneurs</h2>
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                Discover how establishing a sacred morning routine can transform your business mindset and create momentum for success.
+                            </p>
+                            <div class="flex items-center gap-4 mb-6">
+                                <span class="text-sm text-gray-500">By Vibe Team</span>
+                                <span class="text-gray-300">•</span>
+                                <span class="text-sm text-gray-500">January 15, 2024</span>
+                            </div>
+                            <a href="#" class="inline-block bg-vibe-purple text-white px-8 py-3 rounded-full hover:bg-vibe-purple-dark transition-all hover-lift font-semibold">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="flex flex-wrap gap-3 mb-12 justify-center">
+                <button class="bg-vibe-purple text-white px-6 py-2 rounded-full hover:bg-vibe-purple-dark transition-all font-medium">
+                    All Posts
+                </button>
+                <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100 transition-all font-medium">
+                    Wellness
+                </button>
+                <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100 transition-all font-medium">
+                    Spirituality
+                </button>
+                <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100 transition-all font-medium">
+                    Entrepreneurship
+                </button>
+                <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100 transition-all font-medium">
+                    Mindset
+                </button>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-orange-100 to-orange-200 h-48 flex items-center justify-center">
+                        <div class="text-6xl">✨</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs text-vibe-orange font-bold">SPIRITUALITY</span>
+                            <span class="text-gray-300">•</span>
+                            <span class="text-xs text-gray-500">4 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Manifesting Abundance: Beyond the Vision Board</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Learn the deeper spiritual principles behind manifestation and how to align your energy with abundance.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Jan 12, 2024</span>
+                            <a href="#" class="text-vibe-purple font-semibold hover:text-vibe-purple-dark transition-colors text-sm">
+                                Read →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-teal-100 to-teal-200 h-48 flex items-center justify-center">
+                        <div class="text-6xl">🌿</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs text-vibe-teal font-bold">WELLNESS</span>
+                            <span class="text-gray-300">•</span>
+                            <span class="text-xs text-gray-500">6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Holistic Nutrition for High-Performance Entrepreneurs</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Fuel your body and mind with these evidence-based nutrition strategies for sustained energy.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Jan 10, 2024</span>
+                            <a href="#" class="text-vibe-purple font-semibold hover:text-vibe-purple-dark transition-colors text-sm">
+                                Read →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 h-48 flex items-center justify-center">
+                        <div class="text-6xl">🧠</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs text-vibe-purple font-bold">MINDSET</span>
+                            <span class="text-gray-300">•</span>
+                            <span class="text-xs text-gray-500">5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">From Scarcity to Abundance: Rewiring Your Money Mindset</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Transform your relationship with money through these powerful mindset shifts and practices.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Jan 8, 2024</span>
+                            <a href="#" class="text-vibe-purple font-semibold hover:text-vibe-purple-dark transition-colors text-sm">
+                                Read →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-amber-100 to-amber-200 h-48 flex items-center justify-center">
+                        <div class="text-6xl">🚀</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs text-vibe-orange font-bold">ENTREPRENEURSHIP</span>
+                            <span class="text-gray-300">•</span>
+                            <span class="text-xs text-gray-500">7 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Building a Purpose-Driven Business in 2024</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            How to create a business that aligns with your values and makes a positive impact.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Jan 5, 2024</span>
+                            <a href="#" class="text-vibe-purple font-semibold hover:text-vibe-purple-dark transition-colors text-sm">
+                                Read →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-pink-100 to-pink-200 h-48 flex items-center justify-center">
+                        <div class="text-6xl">❤️</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs text-vibe-orange font-bold">WELLNESS</span>
+                            <span class="text-gray-300">•</span>
+                            <span class="text-xs text-gray-500">5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Heart-Centered Leadership: Leading with Compassion</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Discover how leading from the heart creates stronger teams and sustainable success.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Jan 3, 2024</span>
+                            <a href="#" class="text-vibe-purple font-semibold hover:text-vibe-purple-dark transition-colors text-sm">
+                                Read →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="bg-gradient-to-br from-indigo-100 to-indigo-200 h-48 flex items-center justify-center">
+                        <div class="text-6xl">🔮</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs text-vibe-purple font-bold">SPIRITUALITY</span>
+                            <span class="text-gray-300">•</span>
+                            <span class="text-xs text-gray-500">8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Intuition in Business: Trusting Your Inner Guidance</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Learn to balance data-driven decisions with intuitive wisdom for better business outcomes.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Jan 1, 2024</span>
+                            <a href="#" class="text-vibe-purple font-semibold hover:text-vibe-purple-dark transition-colors text-sm">
+                                Read →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Newsletter Subscribe -->
+            <div class="mt-20 bg-gradient-to-br from-vibe-purple to-vibe-purple-dark rounded-3xl p-12 text-center text-white">
+                <h2 class="text-4xl font-bold mb-4">Never Miss a Post</h2>
+                <p class="text-xl mb-8 text-white/80">Get weekly insights delivered to your inbox</p>
+                <div class="max-w-md mx-auto flex gap-3">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-vibe-orange">
+                    <button class="bg-vibe-orange text-white px-8 py-4 rounded-full hover:bg-vibe-orange-dark transition-all font-semibold shadow-lg">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">
+                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                    </h3>
+                    <p class="text-gray-400 mb-4">Empower Your Mind, Body & Soul</p>
+                    <a href="https://richardabreu.studio" target="_blank" class="inline-block text-xs text-gray-500 hover:text-vibe-orange transition-colors border border-gray-700 hover:border-vibe-orange px-3 py-1 rounded-full">
+                        created by richardabreu.studio
+                    </a>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#mentorship" class="hover:text-vibe-teal transition-colors">Mentorship</a></li>
+                        <li><a href="index.html#bazaar" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="blog.html" class="hover:text-vibe-teal transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#giving-circle" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
+                        <li><a href="youtube.html" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
+                        <li><a href="about.html" class="hover:text-vibe-teal transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Vendors</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
