@@ -49,6 +49,9 @@
 
         body {
             font-family: 'Manrope', sans-serif;
+            background-image:
+                url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2341e0d0' fill-opacity='0.05'%3E%3Cpath d='M40 0c-4.4 11-11 17.6-22 22 11 4.4 17.6 11 22 22 4.4-11 11-17.6 22-22-11-4.4-17.6-11-22-22zM10 20c-2.2 5.5-5.5 8.8-11 11 5.5 2.2 8.8 5.5 11 11 2.2-5.5 5.5-8.8 11-11-5.5-2.2-8.8-5.5-11-11zM60 60c-2.2 5.5-5.5 8.8-11 11 5.5 2.2 8.8 5.5 11 11 2.2-5.5 5.5-8.8 11-11-5.5-2.2-8.8-5.5-11-11z'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: 80px 80px;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -66,6 +69,20 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 176, 136, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(255, 176, 136, 0.8); }
+        }
+
+        @keyframes count-up {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
         }
 
         .transition-all {
@@ -95,6 +112,25 @@
 
         .section-transition:hover::before {
             opacity: 1;
+        }
+
+        .tropical-bg {
+            background-image:
+                url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2341e0d0' fill-opacity='0.08'%3E%3Cpath d='M100 0 Q80 40 100 80 Q120 40 100 0 M100 80 Q85 100 100 120 M100 80 Q115 100 100 120' stroke='%2341e0d0' stroke-opacity='0.1' stroke-width='2' fill='none'/%3E%3C/g%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffb088' fill-opacity='0.05'%3E%3Ccircle cx='50' cy='50' r='30' /%3E%3Ccircle cx='150' cy='150' r='40' /%3E%3C/g%3E%3C/svg%3E");
+            background-size: 200px 200px, 300px 300px;
+            background-position: 0 0, 50px 50px;
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -149,19 +185,43 @@
                     A curated space for transformational growth, authentic connections,<br class="hidden md:block"> and holistic wellness.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#mentorship" class="bg-vibe-orange text-white px-10 py-5 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-semibold text-lg shadow-2xl">
-                        Explore Mentorship
+                    <a href="#mentorship" class="pulse-glow bg-vibe-orange text-white px-10 py-5 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-semibold text-lg shadow-2xl">
+                        Explore Mentorship →
                     </a>
                     <a href="#bazaar" class="bg-transparent border-2 border-white text-white px-10 py-5 rounded-full hover:bg-white hover:text-vibe-purple transition-all hover-lift font-semibold text-lg">
-                        Visit the Bazaar
+                        Visit the Bazaar →
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Stats Counter Section -->
+    <section class="py-16 bg-gradient-to-br from-vibe-teal to-vibe-purple text-white scroll-reveal tropical-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold mb-2" data-count="2500">0</div>
+                    <div class="text-lg text-white/80">Community Members</div>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold mb-2" data-count="500">0</div>
+                    <div class="text-lg text-white/80">Mentorship Hours</div>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold mb-2" data-count="150">0</div>
+                    <div class="text-lg text-white/80">Vendors</div>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold mb-2" data-count="98">0</div>
+                    <div class="text-lg text-white/80">% Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Mission Section -->
-    <section id="mission" class="py-24 bg-white section-transition">
+    <section id="mission" class="py-24 bg-white section-transition scroll-reveal">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-5xl md:text-6xl font-bold text-vibe-purple mb-8">Our Mission</h2>
@@ -245,7 +305,7 @@
                             </div>
                             <div class="border-t border-white/20 pt-6">
                                 <div class="text-white/70 text-sm mb-2">FORMAT</div>
-                                <div class="text-2xl font-bold">Virtual or In-Person</div>
+                                <div class="text-2xl font-bold">100% Virtual</div>
                             </div>
                         </div>
                     </div>
@@ -342,8 +402,87 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-vibe-cream scroll-reveal tropical-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl md:text-6xl font-bold text-center text-vibe-purple mb-4">Transformation Stories</h2>
+            <p class="text-center text-gray-600 mb-16 text-xl">Real results from real entrepreneurs</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-teal to-vibe-purple flex items-center justify-center text-white text-2xl font-bold">
+                            S
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-900">Sarah M.</div>
+                            <div class="text-sm text-gray-600">Wellness Coach</div>
+                        </div>
+                    </div>
+                    <div class="text-4xl text-vibe-orange mb-4">"</div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The mentorship program completely transformed my approach to business. I went from struggling to book clients to fully booked in 3 months!
+                    </p>
+                    <div class="flex text-vibe-gold">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-purple to-vibe-orange flex items-center justify-center text-white text-2xl font-bold">
+                            M
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-900">Marcus T.</div>
+                            <div class="text-sm text-gray-600">Digital Creator</div>
+                        </div>
+                    </div>
+                    <div class="text-4xl text-vibe-orange mb-4">"</div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        This community gave me the spiritual alignment I needed. My business revenue doubled, and I finally feel at peace with my purpose.
+                    </p>
+                    <div class="flex text-vibe-gold">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-orange to-vibe-teal flex items-center justify-center text-white text-2xl font-bold">
+                            A
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-900">Aisha K.</div>
+                            <div class="text-sm text-gray-600">Vibe Bazaar Vendor</div>
+                        </div>
+                    </div>
+                    <div class="text-4xl text-vibe-orange mb-4">"</div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Selling in the Vibe Bazaar connected me with my dream customers. The support from this community is unlike anything I've experienced!
+                    </p>
+                    <div class="flex text-vibe-gold">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof Badge -->
+            <div class="mt-16 text-center">
+                <div class="inline-block bg-white rounded-full px-8 py-4 shadow-lg">
+                    <span class="text-gray-600">Trusted by </span>
+                    <span class="font-bold text-vibe-purple text-2xl">2,500+</span>
+                    <span class="text-gray-600"> conscious entrepreneurs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Giving Circle Section -->
-    <section id="giving-circle" class="py-24 bg-white section-transition">
+    <section id="giving-circle" class="py-24 bg-white section-transition scroll-reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="bg-gradient-to-br from-vibe-purple to-vibe-purple-dark rounded-3xl p-12 text-white shadow-2xl">
@@ -486,6 +625,62 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Animated Counter
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-count'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    element.textContent = Math.floor(current).toLocaleString();
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target.toLocaleString();
+                }
+            };
+
+            updateCounter();
+        }
+
+        // Trigger counter animation on scroll
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('[data-count]').forEach(counter => {
+                        animateCounter(counter);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-count]').forEach(el => {
+            if (el.closest('section')) {
+                statsObserver.observe(el.closest('section'));
+            }
+        });
+    </script>
 
 </body>
 </html>
