@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Vibe Connection Lounge</title>
+    <meta name="description" content="Learn about Vibe Connection Lounge - our mission to empower mind, body, and soul through transformational mentorship and community.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vibe-teal': '#41e0d0',
+                        'vibe-teal-dark': '#0D9488',
+                        'vibe-purple': '#442e66',
+                        'vibe-purple-dark': '#2d1e44',
+                        'vibe-orange': '#ffb088',
+                        'vibe-orange-dark': '#eb7e43',
+                        'vibe-gold': '#ffb606',
+                        'vibe-cream': '#FAF8F3',
+                    },
+                    fontFamily: {
+                        'serif': ['Lusitana', 'Georgia', 'serif'],
+                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lusitana', serif;
+        }
+
+        .transition-all {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="bg-vibe-cream">
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <!-- VCL Lotus Logo -->
+                    <svg width="48" height="48" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                        <!-- Lotus Petals -->
+                        <path d="M20 70 Q15 50 20 40 L30 50 Q25 60 20 70 Z" fill="#41e0d0" opacity="0.8"/>
+                        <path d="M80 70 Q85 50 80 40 L70 50 Q75 60 80 70 Z" fill="#41e0d0" opacity="0.8"/>
+                        <path d="M35 65 Q30 45 35 35 L45 45 Q40 55 35 65 Z" fill="#41e0d0"/>
+                        <path d="M65 65 Q70 45 65 35 L55 45 Q60 55 65 65 Z" fill="#41e0d0"/>
+                        <!-- Center V (Teal) -->
+                        <path d="M42 35 L50 60 L58 35 L55 35 L50 52 L45 35 Z" fill="#41e0d0"/>
+                        <!-- Center Spiral/C (Orange) -->
+                        <circle cx="50" cy="30" r="8" fill="none" stroke="#ffb088" stroke-width="3"/>
+                        <path d="M50 22 Q58 22 58 30" fill="none" stroke="#ffb088" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Stem/L -->
+                        <rect x="48" y="65" width="4" height="20" fill="#41e0d0"/>
+                        <path d="M48 85 L48 95 L60 95" fill="none" stroke="#41e0d0" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Small Leaf -->
+                        <path d="M52 75 Q60 75 60 82 Q60 75 52 75" fill="#41e0d0" opacity="0.6"/>
+                    </svg>
+                    <span class="text-2xl font-serif font-bold">
+                        <span class="text-vibe-purple italic">Vibe</span>
+                        <span class="text-gray-800"> Connection Lounge</span>
+                    </span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#mission" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mission</a>
+                    <a href="index.html#mentorship" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mentorship</a>
+                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Bazaar</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Blog</a>
+                    <a href="youtube.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">YouTube</a>
+                    <a href="about.html" class="text-vibe-purple hover:text-vibe-purple-dark transition-colors font-bold">About</a>
+                </div>
+                <div class="flex gap-3">
+                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-all hover-lift font-medium shadow-lg">
+                        Give
+                    </a>
+                    <a href="index.html#subscribe" class="hidden sm:inline-block bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-medium shadow-lg">
+                        Join Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Our Story</h1>
+            <p class="text-xl md:text-2xl mb-4">Building a sanctuary for conscious entrepreneurs</p>
+            <p class="text-lg text-white/80">Empowering Mind, Body & Soul through authentic connection</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=600&fit=crop" alt="Mindful community connection" class="rounded-2xl shadow-2xl w-full">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-vibe-purple mb-6">Who We Are</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Vibe Connection Lounge is more than a marketplace—we're a <strong class="text-vibe-teal">movement</strong>.
+                        Founded on the belief that authentic connection and holistic growth are the keys to sustainable success.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        We created this space for entrepreneurs, wellness practitioners, and conscious creators who refuse to choose
+                        between <strong class="text-vibe-orange">spiritual alignment</strong> and <strong class="text-vibe-purple">business growth</strong>.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our community thrives on the principle that when you empower your mind, nourish your body, and connect with your soul,
+                        success becomes inevitable.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl font-bold text-vibe-purple mb-6">What We Believe</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-vibe-teal/20 flex items-center justify-center flex-shrink-0">
+                                <span class="text-2xl text-vibe-teal font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Authentic Connection Over Transactions</h3>
+                                <p class="text-gray-700">Real relationships create lasting impact. We prioritize genuine community over quick sales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-vibe-orange/20 flex items-center justify-center flex-shrink-0">
+                                <span class="text-2xl text-vibe-orange font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Holistic Growth Is Sustainable Growth</h3>
+                                <p class="text-gray-700">Mind, body, and soul alignment creates businesses that thrive without burnout.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-vibe-purple/20 flex items-center justify-center flex-shrink-0">
+                                <span class="text-2xl text-vibe-purple font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Abundance Through Generosity</h3>
+                                <p class="text-gray-700">When we give to the community, everyone rises together. Our Giving Circle embodies this truth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=600&fit=crop" alt="Collaborative community values" class="rounded-2xl shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="py-24 bg-vibe-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold text-center text-vibe-purple mb-4">What We Offer</h2>
+            <p class="text-center text-gray-600 mb-16 text-xl">Three pillars of transformation</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop" alt="One-on-one mentorship session" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-vibe-purple mb-4">Premium Mentorship</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        100% virtual 1-on-1 sessions with expert mentors who've walked your path. Get personalized guidance for your unique journey.
+                    </p>
+                    <a href="index.html#mentorship" class="text-vibe-teal font-semibold hover:text-vibe-teal-dark transition-colors">
+                        Learn More →
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="Curated marketplace products" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-vibe-purple mb-4">Vibe Bazaar</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        A curated marketplace featuring wellness products, digital tools, and lifestyle goods handpicked for conscious entrepreneurs.
+                    </p>
+                    <a href="index.html#bazaar" class="text-vibe-teal font-semibold hover:text-vibe-teal-dark transition-colors">
+                        Explore Bazaar →
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="w-full h-48 mb-6 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=400&fit=crop" alt="Community giving and support" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-vibe-purple mb-4">Giving Circle</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        A portion of every transaction supports mental health resources, community events, and free access for those in need.
+                    </p>
+                    <a href="giving.html" class="text-vibe-teal font-semibold hover:text-vibe-teal-dark transition-colors">
+                        Support the Circle →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us CTA -->
+    <section class="py-20 bg-gradient-to-br from-vibe-teal to-vibe-purple text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Join the Movement?</h2>
+            <p class="text-xl mb-10 text-white/90">
+                Become part of a community that values your whole self—mind, body, and soul.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#subscribe" class="bg-white text-vibe-purple px-10 py-4 rounded-full hover:bg-gray-100 transition-all hover-lift font-semibold text-lg shadow-2xl">
+                    Join Community
+                </a>
+                <a href="become-vendor.html" class="bg-vibe-orange text-white px-10 py-4 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-semibold text-lg shadow-2xl">
+                    Become a Vendor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">
+                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                    </h3>
+                    <p class="text-gray-400 mb-4">Empower Your Mind, Body & Soul</p>
+                    <a href="https://richardabreu.studio" target="_blank" class="inline-block text-xs text-gray-500 hover:text-vibe-orange transition-colors border border-gray-700 hover:border-vibe-orange px-3 py-1 rounded-full">
+                        created by richardabreu.studio
+                    </a>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#mentorship" class="hover:text-vibe-teal transition-colors">Mentorship</a></li>
+                        <li><a href="index.html#bazaar" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="blog.html" class="hover:text-vibe-teal transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="giving.html" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
+                        <li><a href="youtube.html" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
+                        <li><a href="about.html" class="hover:text-vibe-teal transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Vendors</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

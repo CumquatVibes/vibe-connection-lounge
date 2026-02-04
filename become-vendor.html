@@ -42,7 +42,25 @@
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="flex items-center space-x-2">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <!-- VCL Lotus Logo -->
+                    <svg width="48" height="48" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                        <!-- Lotus Petals -->
+                        <path d="M20 70 Q15 50 20 40 L30 50 Q25 60 20 70 Z" fill="#41e0d0" opacity="0.8"/>
+                        <path d="M80 70 Q85 50 80 40 L70 50 Q75 60 80 70 Z" fill="#41e0d0" opacity="0.8"/>
+                        <path d="M35 65 Q30 45 35 35 L45 45 Q40 55 35 65 Z" fill="#41e0d0"/>
+                        <path d="M65 65 Q70 45 65 35 L55 45 Q60 55 65 65 Z" fill="#41e0d0"/>
+                        <!-- Center V (Teal) -->
+                        <path d="M42 35 L50 60 L58 35 L55 35 L50 52 L45 35 Z" fill="#41e0d0"/>
+                        <!-- Center Spiral/C (Orange) -->
+                        <circle cx="50" cy="30" r="8" fill="none" stroke="#ffb088" stroke-width="3"/>
+                        <path d="M50 22 Q58 22 58 30" fill="none" stroke="#ffb088" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Stem/L -->
+                        <rect x="48" y="65" width="4" height="20" fill="#41e0d0"/>
+                        <path d="M48 85 L48 95 L60 95" fill="none" stroke="#41e0d0" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Small Leaf -->
+                        <path d="M52 75 Q60 75 60 82 Q60 75 52 75" fill="#41e0d0" opacity="0.6"/>
+                    </svg>
                     <span class="text-2xl font-bold">
                         <span class="text-vibe-teal italic">Vibe</span>
                         <span class="text-gray-800"> Connection Lounge</span>
@@ -55,8 +73,11 @@
                     <a href="index.html#youtube" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">YouTube</a>
                     <a href="about.html" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">About</a>
                 </div>
-                <div>
-                    <a href="#register" class="bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-colors font-medium">
+                <div class="flex gap-3">
+                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-all font-medium shadow-lg">
+                        Give
+                    </a>
+                    <a href="#register" class="bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-colors font-medium">
                         Get Started
                     </a>
                 </div>
@@ -79,16 +100,18 @@
             <div class="space-y-12">
                 <!-- The Deal -->
                 <div class="bg-vibe-cream rounded-2xl p-8 md:p-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                        <span class="text-4xl">💰</span>
-                        The Deal
-                    </h2>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=200&h=200&fit=crop" alt="Financial growth and commission structure" class="w-full h-full object-cover">
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">The Deal</h2>
+                    </div>
                     <p class="text-lg text-gray-700 leading-relaxed mb-4">
                         We keep it simple with a <strong class="text-vibe-teal">flat 10% commission</strong> on every sale.
                         No hidden fees, just growth. Payouts are processed <strong>monthly</strong> directly to your account.
                     </p>
                     <div class="mt-6 p-6 bg-white rounded-xl border-2 border-vibe-teal/20">
-                        <h3 class="text-xl font-bold text-vibe-teal mb-3">Where Your 10% Goes 🌱</h3>
+                        <h3 class="text-xl font-bold text-vibe-teal mb-3">Where Your 10% Goes</h3>
                         <p class="text-gray-700 mb-4">Every commission directly funds the growth of our community:</p>
                         <ul class="space-y-2 text-gray-700">
                             <li class="flex items-start gap-2">
@@ -113,10 +136,12 @@
 
                 <!-- Your Lane -->
                 <div class="bg-vibe-cream rounded-2xl p-8 md:p-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                        <span class="text-4xl">🚀</span>
-                        Your Lane
-                    </h2>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=200&h=200&fit=crop" alt="Shipping and fulfillment workflow" class="w-full h-full object-cover">
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">Your Lane</h2>
+                    </div>
                     <p class="text-lg text-gray-700 leading-relaxed mb-4">
                         You're in full control of your products. Vendors handle their own:
                     </p>
@@ -141,10 +166,12 @@
 
                 <!-- The Community -->
                 <div class="bg-vibe-cream rounded-2xl p-8 md:p-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                        <span class="text-4xl">🌟</span>
-                        The Community
-                    </h2>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=200&h=200&fit=crop" alt="Community connection and support" class="w-full h-full object-cover">
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">The Community</h2>
+                    </div>
                     <p class="text-lg text-gray-700 leading-relaxed">
                         Your brand gets featured across the Lounge, including our <strong>"Vibe Bazaar" highlights</strong>.
                         You'll be part of a curated marketplace focused on wellness, lifestyle, and digital tools for entrepreneurs
@@ -160,18 +187,24 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Why Sell with Vibe Bazaar?</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="text-4xl mb-4">📈</div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="w-full h-32 mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop" alt="Engaged audience of wellness entrepreneurs" class="w-full h-full object-cover">
+                    </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Access to Engaged Audience</h3>
                     <p class="text-gray-700">Reach entrepreneurs and wellness enthusiasts who are actively looking for products like yours.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="text-4xl mb-4">🛠️</div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="w-full h-32 mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Easy vendor dashboard interface" class="w-full h-full object-cover">
+                    </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Easy-to-Use Dashboard</h3>
                     <p class="text-gray-700">Manage your products, orders, and analytics from one simple vendor portal.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="text-4xl mb-4">💬</div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
+                    <div class="w-full h-32 mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop" alt="Supportive vendor community" class="w-full h-full object-cover">
+                    </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Community Support</h3>
                     <p class="text-gray-700">Join a network of vendors who support each other's growth and success.</p>
                 </div>
