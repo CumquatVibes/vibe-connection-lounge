@@ -73,24 +73,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center space-x-3">
-                    <!-- VCL Lotus Logo -->
-                    <svg width="48" height="48" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
-                        <!-- Lotus Petals -->
-                        <path d="M20 70 Q15 50 20 40 L30 50 Q25 60 20 70 Z" fill="#41e0d0" opacity="0.8"/>
-                        <path d="M80 70 Q85 50 80 40 L70 50 Q75 60 80 70 Z" fill="#41e0d0" opacity="0.8"/>
-                        <path d="M35 65 Q30 45 35 35 L45 45 Q40 55 35 65 Z" fill="#41e0d0"/>
-                        <path d="M65 65 Q70 45 65 35 L55 45 Q60 55 65 65 Z" fill="#41e0d0"/>
-                        <!-- Center V (Teal) -->
-                        <path d="M42 35 L50 60 L58 35 L55 35 L50 52 L45 35 Z" fill="#41e0d0"/>
-                        <!-- Center Spiral/C (Orange) -->
-                        <circle cx="50" cy="30" r="8" fill="none" stroke="#ffb088" stroke-width="3"/>
-                        <path d="M50 22 Q58 22 58 30" fill="none" stroke="#ffb088" stroke-width="3" stroke-linecap="round"/>
-                        <!-- Stem/L -->
-                        <rect x="48" y="65" width="4" height="20" fill="#41e0d0"/>
-                        <path d="M48 85 L48 95 L60 95" fill="none" stroke="#41e0d0" stroke-width="4" stroke-linecap="round"/>
-                        <!-- Small Leaf -->
-                        <path d="M52 75 Q60 75 60 82 Q60 75 52 75" fill="#41e0d0" opacity="0.6"/>
-                    </svg>
+                    <!-- VCL Vine & Lotus Logo -->
+                    <img src="images/vcl-logo.svg" alt="Vibe Connection Lounge logo" width="120" height="44" class="flex-shrink-0">
                     <span class="text-2xl font-serif font-bold">
                         <span class="text-vibe-purple italic">Vibe</span>
                         <span class="text-gray-800"> Connection Lounge</span>
@@ -121,7 +105,17 @@
         <div class="absolute inset-0 opacity-10">
             <div class="absolute top-20 left-10 w-64 h-64 bg-vibe-teal rounded-full blur-3xl"></div>
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-vibe-orange rounded-full blur-3xl"></div>
+            <div class="absolute top-0 right-0 w-80 h-80 bg-green-500 rounded-full blur-3xl"></div>
         </div>
+        <!-- Tropical leaf SVG accents -->
+        <svg class="absolute top-0 left-0 w-48 h-48 text-green-500 opacity-10 -translate-x-8 -translate-y-8" viewBox="0 0 200 200" fill="currentColor">
+            <path d="M100 10 Q60 60 20 100 Q60 80 100 100 Q80 60 100 10Z"/>
+            <path d="M120 30 Q90 70 50 120 Q90 95 120 120 Q100 75 120 30Z"/>
+        </svg>
+        <svg class="absolute bottom-0 right-0 w-48 h-48 text-green-500 opacity-10 translate-x-8 translate-y-8 rotate-180" viewBox="0 0 200 200" fill="currentColor">
+            <path d="M100 10 Q60 60 20 100 Q60 80 100 100 Q80 60 100 10Z"/>
+            <path d="M120 30 Q90 70 50 120 Q90 95 120 120 Q100 75 120 30Z"/>
+        </svg>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div class="inline-block bg-vibe-orange px-4 py-2 rounded-full text-sm font-bold mb-6">
                 1-ON-1 MENTORSHIP PROGRAM
@@ -138,22 +132,20 @@
     </section>
 
     <!-- Meet Your Mentor Section -->
-    <section class="py-24 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-24 bg-white relative overflow-hidden">
+        <!-- Subtle tropical background -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-green-100/40 to-transparent rounded-full -translate-y-1/2 translate-x-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-vibe-teal/5 to-transparent rounded-full translate-y-1/2 -translate-x-1/3"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Mentor Image Placeholder -->
+                <!-- Mentor Image -->
                 <div class="relative">
-                    <div class="aspect-[4/5] bg-gradient-to-br from-vibe-purple/10 to-vibe-teal/10 rounded-3xl flex items-center justify-center border-2 border-dashed border-vibe-purple/30">
-                        <!-- Placeholder for mentor image -->
-                        <div class="text-center p-8">
-                            <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-vibe-purple to-vibe-teal flex items-center justify-center">
-                                <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <p class="text-gray-500 text-sm">Mentor photo coming soon</p>
-                        </div>
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/mentor-tree.jpg" alt="Your mentor surrounded by lush island greenery" class="w-full h-full object-cover object-top">
                     </div>
+                    <!-- Decorative leaf accent -->
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full opacity-20 blur-xl"></div>
+                    <div class="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-vibe-teal to-green-400 rounded-full opacity-20 blur-xl"></div>
                 </div>
 
                 <!-- Mentor Bio -->
@@ -181,8 +173,18 @@
         </div>
     </section>
 
+    <!-- Tropical Divider -->
+    <div class="bg-gradient-to-r from-green-600 via-vibe-teal to-green-600 h-1 opacity-30"></div>
+
     <!-- The Experience Section -->
-    <section class="py-24 bg-vibe-cream">
+    <section class="py-24 bg-vibe-cream relative overflow-hidden">
+        <!-- Island leaf accents -->
+        <svg class="absolute top-12 right-0 w-36 h-36 text-green-600 opacity-[0.06]" viewBox="0 0 200 200" fill="currentColor">
+            <path d="M180 20 Q120 80 60 140 Q120 110 160 140 Q140 80 180 20Z"/>
+        </svg>
+        <svg class="absolute bottom-12 left-0 w-36 h-36 text-green-600 opacity-[0.06] rotate-180" viewBox="0 0 200 200" fill="currentColor">
+            <path d="M180 20 Q120 80 60 140 Q120 110 160 140 Q140 80 180 20Z"/>
+        </svg>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl md:text-5xl font-bold text-center text-vibe-purple mb-6">The Mentorship Experience</h2>
             <p class="text-center text-gray-600 mb-16 text-xl max-w-3xl mx-auto">
