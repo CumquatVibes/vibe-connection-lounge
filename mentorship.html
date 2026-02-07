@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Release and Recalibration Mentorship | Vibe Connection Lounge</title>
+    <meta name="description" content="A 10-12 week transformational mentorship program focused on emotional awareness, nervous system regulation, and embodied healing.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vibe-teal': '#41e0d0',
+                        'vibe-teal-dark': '#0D9488',
+                        'vibe-purple': '#442e66',
+                        'vibe-purple-dark': '#2d1e44',
+                        'vibe-orange': '#ffb088',
+                        'vibe-orange-dark': '#eb7e43',
+                        'vibe-gold': '#ffb606',
+                        'vibe-cream': '#FAF8F3',
+                    },
+                    fontFamily: {
+                        'serif': ['Lusitana', 'Georgia', 'serif'],
+                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lusitana', serif;
+        }
+
+        .transition-all {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 176, 136, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(255, 176, 136, 0.8); }
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-vibe-cream">
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <!-- VCL Lotus Logo -->
+                    <svg width="48" height="48" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                        <!-- Lotus Petals -->
+                        <path d="M20 70 Q15 50 20 40 L30 50 Q25 60 20 70 Z" fill="#41e0d0" opacity="0.8"/>
+                        <path d="M80 70 Q85 50 80 40 L70 50 Q75 60 80 70 Z" fill="#41e0d0" opacity="0.8"/>
+                        <path d="M35 65 Q30 45 35 35 L45 45 Q40 55 35 65 Z" fill="#41e0d0"/>
+                        <path d="M65 65 Q70 45 65 35 L55 45 Q60 55 65 65 Z" fill="#41e0d0"/>
+                        <!-- Center V (Teal) -->
+                        <path d="M42 35 L50 60 L58 35 L55 35 L50 52 L45 35 Z" fill="#41e0d0"/>
+                        <!-- Center Spiral/C (Orange) -->
+                        <circle cx="50" cy="30" r="8" fill="none" stroke="#ffb088" stroke-width="3"/>
+                        <path d="M50 22 Q58 22 58 30" fill="none" stroke="#ffb088" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Stem/L -->
+                        <rect x="48" y="65" width="4" height="20" fill="#41e0d0"/>
+                        <path d="M48 85 L48 95 L60 95" fill="none" stroke="#41e0d0" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Small Leaf -->
+                        <path d="M52 75 Q60 75 60 82 Q60 75 52 75" fill="#41e0d0" opacity="0.6"/>
+                    </svg>
+                    <span class="text-2xl font-serif font-bold">
+                        <span class="text-vibe-purple italic">Vibe</span>
+                        <span class="text-gray-800"> Connection Lounge</span>
+                    </span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#mission" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mission</a>
+                    <a href="mentorship.html" class="text-vibe-purple hover:text-vibe-purple-dark transition-colors font-bold">Mentorship</a>
+                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Bazaar</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Blog</a>
+                    <a href="youtube.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">YouTube</a>
+                    <a href="about.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">About</a>
+                </div>
+                <div class="flex gap-3">
+                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-all hover-lift font-medium shadow-lg">
+                        Give
+                    </a>
+                    <a href="index.html#subscribe" class="hidden sm:inline-block bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-medium shadow-lg">
+                        Join Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-64 h-64 bg-vibe-teal rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-vibe-orange rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-block bg-vibe-orange px-4 py-2 rounded-full text-sm font-bold mb-6">
+                1-ON-1 MENTORSHIP PROGRAM
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Emotional Release &<br>
+                <span class="italic text-vibe-teal">Recalibration</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-4 text-white/90">A 10-12 Week Transformational Journey</p>
+            <p class="text-lg text-white/70 max-w-2xl mx-auto">
+                Deep emotional awareness, nervous system regulation, and embodied healing for lasting transformation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Meet Your Mentor Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Mentor Image Placeholder -->
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-gradient-to-br from-vibe-purple/10 to-vibe-teal/10 rounded-3xl flex items-center justify-center border-2 border-dashed border-vibe-purple/30">
+                        <!-- Placeholder for mentor image -->
+                        <div class="text-center p-8">
+                            <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-vibe-purple to-vibe-teal flex items-center justify-center">
+                                <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-500 text-sm">Mentor photo coming soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentor Bio -->
+                <div>
+                    <h2 class="text-4xl font-bold text-vibe-purple mb-6">Meet Your Mentor</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p>
+                            I am a <strong class="text-vibe-purple">holistic wellness coach</strong>, <strong class="text-vibe-teal">alchemist</strong>, and <strong class="text-vibe-orange">spiritual teacher</strong>. I specialize in emotional awareness, nervous system regulation, and embodied healing.
+                        </p>
+                        <p>
+                            With experience in herbalism and naturopathic principles, my work integrates grounding science, spiritual wisdom, and intuitive guidance to support deep, lasting transformation. I hold calm, trauma-aware spaces where clients can safely release emotional patterns and reconnect with themselves in a sustainable, honest way.
+                        </p>
+                        <p>
+                            I work with the individual as a whole—body, mind, emotions, and energy—honoring the unique pace and needs of each person.
+                        </p>
+                        <p>
+                            As a spiritual teacher, researcher, and alchemist, I am deeply curious about how ancient wisdom and modern understanding meet. I study the patterns behind emotional storage, energetic imbalance, and identity formation, and I translate this knowledge into practical, grounded support that clients can actually apply in daily life.
+                        </p>
+                        <p>
+                            Through years of research, study, and lived experience, I have developed a grounded, trauma-aware approach that supports deep emotional awareness, energetic alignment, and sustainable transformation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Experience Section -->
+    <section class="py-24 bg-vibe-cream">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-vibe-purple mb-6">The Mentorship Experience</h2>
+            <p class="text-center text-gray-600 mb-16 text-xl max-w-3xl mx-auto">
+                In my mentorship containers, I hold a calm, steady space where clients feel safe to slow down, feel deeply, and reconnect with themselves without pressure or performance.
+            </p>
+
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl mb-12">
+                <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                    This work is not about bypassing or forcing change—it's about creating the <strong class="text-vibe-teal">internal conditions where change happens naturally</strong>.
+                </p>
+                <p class="text-xl text-gray-700 leading-relaxed">
+                    This mentorship is designed for those who are ready to commit to themselves with honesty, presence, and care. It is for individuals who are no longer seeking quick fixes, but are ready to experience <strong class="text-vibe-purple">lasting emotional regulation</strong>, <strong class="text-vibe-orange">clarity</strong>, and <strong class="text-vibe-teal">inner stability</strong>.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vibe-teal/20 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-vibe-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-vibe-purple mb-3">Emotional Awareness</h3>
+                    <p class="text-gray-600">Deep understanding of your emotional patterns and how they shape your experience.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vibe-orange/20 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-vibe-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-vibe-purple mb-3">Nervous System Regulation</h3>
+                    <p class="text-gray-600">Tools and practices for grounding, safety, and sustainable well-being.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vibe-purple/20 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-vibe-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-vibe-purple mb-3">Energetic Alignment</h3>
+                    <p class="text-gray-600">Reconnect with your authentic self and find inner stability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="py-24 bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">Your Investment</h2>
+            <p class="text-center text-white/80 mb-16 text-xl">
+                10-12 weeks of transformational 1-on-1 mentorship
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Pay in Full -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all">
+                    <div class="text-center">
+                        <div class="inline-block bg-vibe-teal px-4 py-1 rounded-full text-sm font-bold mb-4 text-white">
+                            BEST VALUE
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Pay in Full</h3>
+                        <div class="text-5xl md:text-6xl font-bold mb-2">$3,000</div>
+                        <p class="text-white/70 mb-6">One-time payment</p>
+                        <ul class="text-left space-y-3 mb-8">
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span>Full 10-12 week program access</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span>1-on-1 mentorship sessions</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span>Ongoing support between sessions</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span>Save $300 vs. payment plan</span>
+                            </li>
+                        </ul>
+                        <a href="#apply" class="pulse-glow block w-full bg-vibe-orange text-white px-8 py-4 rounded-full hover:bg-vibe-orange-dark transition-all font-bold text-lg shadow-2xl text-center">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Payment Plan -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all">
+                    <div class="text-center">
+                        <div class="inline-block bg-vibe-orange px-4 py-1 rounded-full text-sm font-bold mb-4 text-white">
+                            FLEXIBLE
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Payment Plan</h3>
+                        <div class="text-5xl md:text-6xl font-bold mb-2">$1,100</div>
+                        <p class="text-white/70 mb-6">x 3 monthly payments</p>
+                        <ul class="text-left space-y-3 mb-8">
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-orange text-xl">&#10003;</span>
+                                <span>Full 10-12 week program access</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-orange text-xl">&#10003;</span>
+                                <span>1-on-1 mentorship sessions</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-orange text-xl">&#10003;</span>
+                                <span>Ongoing support between sessions</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-vibe-orange text-xl">&#10003;</span>
+                                <span>Spread investment over 3 months</span>
+                            </li>
+                        </ul>
+                        <a href="#apply" class="block w-full bg-white text-vibe-purple px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-bold text-lg shadow-2xl text-center">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Is This For You Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-vibe-purple mb-8">Is This Mentorship For You?</h2>
+            <p class="text-xl text-gray-700 leading-relaxed mb-12">
+                This mentorship is designed for those who are ready to commit to themselves with honesty, presence, and care. It is for individuals who are no longer seeking quick fixes, but are ready to experience lasting emotional regulation, clarity, and inner stability.
+            </p>
+
+            <div class="bg-gradient-to-br from-vibe-cream to-white rounded-3xl p-8 md:p-12 border border-vibe-purple/10">
+                <p class="text-2xl md:text-3xl font-serif text-vibe-purple italic mb-6">
+                    "If you are feeling called to this work, trust that pull."
+                </p>
+                <p class="text-xl text-gray-700">
+                    The right time is when your body and inner knowing says <strong class="text-vibe-teal">yes</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply" class="py-24 bg-gradient-to-br from-vibe-orange to-vibe-orange-dark text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Begin Your Journey</h2>
+            <p class="text-xl mb-12 text-white/90">
+                Ready to experience deep emotional release and lasting transformation? Apply for the mentorship program today.
+            </p>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20">
+                <p class="text-lg mb-8">
+                    Fill out the application form below and we'll be in touch to schedule your discovery call.
+                </p>
+                <a href="mailto:hello@vibeconnectionlounge.com?subject=Mentorship%20Application%20-%20Emotional%20Release%20%26%20Recalibration" class="inline-block bg-white text-vibe-orange px-10 py-5 rounded-full hover:bg-gray-100 transition-all hover-lift font-bold text-lg shadow-2xl">
+                    Apply for Mentorship
+                </a>
+                <p class="text-white/70 text-sm mt-6">
+                    Questions? Email us at hello@vibeconnectionlounge.com
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">
+                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                    </h3>
+                    <p class="text-gray-400 mb-4">Empower Your Mind, Body & Soul</p>
+                    <a href="https://richardabreu.studio" target="_blank" class="inline-block text-xs text-gray-500 hover:text-vibe-orange transition-colors border border-gray-700 hover:border-vibe-orange px-3 py-1 rounded-full">
+                        created by richardabreu.studio
+                    </a>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="mentorship.html" class="hover:text-vibe-teal transition-colors">Mentorship</a></li>
+                        <li><a href="index.html#bazaar" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="blog.html" class="hover:text-vibe-teal transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="giving.html" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
+                        <li><a href="youtube.html" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
+                        <li><a href="about.html" class="hover:text-vibe-teal transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Vendors</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
