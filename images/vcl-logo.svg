@@ -1,49 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" fill="none">
-  <!-- VCL Flowing Vine & Lotus Logo -->
-  <g stroke="#41e0d0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 70" fill="none">
+  <!-- VCL Logo: Open Lotus with Flowing Vine -->
 
-    <!-- Left branch with small leaves -->
-    <path d="M10 58 Q20 55 35 50"/>
-    <!-- Leaf 1 (small, upper left) -->
-    <path d="M18 52 Q14 44 22 42 Q20 50 18 52" fill="#41e0d0" stroke="none"/>
-    <!-- Leaf 2 (small, lower left) -->
-    <path d="M26 56 Q22 62 28 66 Q30 58 26 56" fill="#41e0d0" stroke="none"/>
-    <!-- Leaf 3 stem -->
-    <path d="M15 55 Q12 48 16 44"/>
-    <path d="M24 53 Q21 60 25 65"/>
+  <!-- Left flowing vine -->
+  <g stroke="#41e0d0" stroke-width="2" stroke-linecap="round">
+    <path d="M12 42 C24 40, 36 36, 52 32"/>
+    <!-- Left leaf 1 -->
+    <path d="M24 38 C20 30, 26 24, 30 28 C28 34, 24 38, 24 38" fill="#41e0d0" opacity="0.2"/>
+    <path d="M24 38 C20 30, 26 24, 30 28"/>
+    <!-- Left leaf 2 -->
+    <path d="M38 34 C36 42, 40 48, 44 44 C42 38, 38 34, 38 34" fill="#41e0d0" opacity="0.2"/>
+    <path d="M38 34 C36 42, 40 48, 44 44"/>
+  </g>
 
-    <!-- Main flowing vine from left to center -->
-    <path d="M35 50 Q50 42 65 35 Q75 30 85 32"/>
+  <!-- Lotus Flower -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Far left petal -->
+    <path d="M62 36 C56 22, 60 10, 68 4 C72 12, 72 26, 68 36"
+          fill="#41e0d0" opacity="0.1" stroke="#41e0d0" stroke-width="1.8"/>
 
-    <!-- Lotus bud - left petal -->
-    <path d="M75 38 Q68 22 80 12 Q84 20 82 32" fill="#41e0d0" opacity="0.3" stroke="#41e0d0" stroke-width="2"/>
+    <!-- Left petal -->
+    <path d="M72 34 C68 18, 74 6, 82 2 C86 10, 84 24, 80 34"
+          fill="#41e0d0" opacity="0.15" stroke="#41e0d0" stroke-width="1.8"/>
 
-    <!-- Lotus bud - center/right petal -->
-    <path d="M82 35 Q88 18 100 14 Q98 26 92 35" fill="#41e0d0" opacity="0.3" stroke="#41e0d0" stroke-width="2"/>
+    <!-- Center-left petal -->
+    <path d="M82 32 C80 14, 88 2, 94 0 C98 8, 96 22, 92 32"
+          fill="#41e0d0" opacity="0.22" stroke="#41e0d0" stroke-width="1.8"/>
 
-    <!-- Lotus bud - inner detail (spiral C shape) -->
-    <path d="M85 30 Q92 24 96 28 Q94 34 86 34" stroke-width="2.5"/>
+    <!-- Center petal (tallest, orange accent) -->
+    <path d="M92 30 C92 12, 98 0, 104 -2 C110 4, 110 18, 108 30"
+          fill="#ffb088" opacity="0.15" stroke="#ffb088" stroke-width="2"/>
 
-    <!-- Small center leaf/petal -->
-    <path d="M88 36 Q90 28 94 26" stroke-width="2"/>
+    <!-- Center-right petal -->
+    <path d="M108 32 C106 14, 114 2, 120 0 C124 10, 120 24, 116 32"
+          fill="#41e0d0" opacity="0.22" stroke="#41e0d0" stroke-width="1.8"/>
 
-    <!-- Vine continues from lotus to right -->
-    <path d="M92 35 Q105 38 118 45 Q130 52 145 52"/>
+    <!-- Right petal -->
+    <path d="M118 34 C116 18, 122 6, 130 2 C134 12, 130 26, 126 34"
+          fill="#41e0d0" opacity="0.15" stroke="#41e0d0" stroke-width="1.8"/>
 
-    <!-- Right side flowing curves -->
-    <path d="M145 52 Q158 50 170 44 Q178 40 185 42"/>
+    <!-- Far right petal -->
+    <path d="M128 36 C126 22, 132 10, 140 4 C142 14, 140 28, 136 36"
+          fill="#41e0d0" opacity="0.1" stroke="#41e0d0" stroke-width="1.8"/>
 
-    <!-- Right leaf 1 (larger, flowing upward) -->
-    <path d="M160 46 Q155 32 165 24 Q168 36 164 46" fill="#41e0d0" opacity="0.4" stroke="#41e0d0" stroke-width="2"/>
+    <!-- Lotus base/cup -->
+    <path d="M58 40 C72 48, 90 50, 100 50 C110 50, 128 48, 142 40"
+          fill="none" stroke="#41e0d0" stroke-width="2.2"/>
 
+    <!-- Inner glow dot -->
+    <circle cx="100" cy="24" r="3" fill="#ffb088" opacity="0.4"/>
+  </g>
+
+  <!-- Right flowing vine -->
+  <g stroke="#41e0d0" stroke-width="2" stroke-linecap="round">
+    <path d="M146 32 C160 36, 172 40, 188 42"/>
+    <!-- Right leaf 1 -->
+    <path d="M160 36 C164 28, 170 26, 172 30 C168 34, 162 36, 160 36" fill="#41e0d0" opacity="0.2"/>
+    <path d="M160 36 C164 28, 170 26, 172 30"/>
     <!-- Right leaf 2 -->
-    <path d="M175 42 Q178 30 188 28 Q186 38 178 44" fill="#41e0d0" opacity="0.3" stroke="#41e0d0" stroke-width="2"/>
-
-    <!-- Decorative curl at right end -->
-    <path d="M185 42 Q195 44 198 38 Q196 32 190 34" stroke-width="2"/>
-
-    <!-- Small accent leaves on right vine -->
-    <path d="M150 54 Q148 62 152 66 Q154 60 150 54" fill="#41e0d0" stroke="none"/>
-    <path d="M138 52 Q134 58 138 62 Q140 56 138 52" fill="#41e0d0" stroke="none"/>
+    <path d="M178 42 C180 48, 186 50, 188 46 C184 42, 178 42, 178 42" fill="#41e0d0" opacity="0.2"/>
+    <path d="M178 42 C180 48, 186 50, 188 46"/>
+    <!-- End curl -->
+    <path d="M188 42 C194 42, 196 38, 194 34"/>
   </g>
 </svg>
