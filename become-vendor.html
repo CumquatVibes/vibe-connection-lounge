@@ -10,20 +10,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'vibe-teal': '#14B8A6',
-                        'vibe-teal-dark': '#0D9488',
-                        'vibe-cream': '#FAF8F3',
-                        'vibe-sage': '#8B9F8E',
+                        'vibe-sage': '#7C9885',
+                        'vibe-sage-dark': '#5A7A63',
+                        'vibe-sage-light': '#A8BFA8',
+                        'vibe-cream': '#F5F0E8',
+                        'vibe-olive': '#4A5D3A',
+                        'vibe-olive-dark': '#3A4D2E',
+                        'vibe-purple': '#442e66',
+                        'vibe-orange': '#D4956A',
+                        'vibe-orange-dark': '#B87A4F',
+                        'vibe-gold': '#C4A96A',
+                        'vibe-brown': '#3D2E1F',
+                        'vibe-brown-dark': '#2A1F14',
                     },
                     fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
                     },
                 }
             }
@@ -32,7 +41,11 @@
 
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
         }
     </style>
 </head>
@@ -40,42 +53,42 @@
 
     <!-- Tropical plant accents scattered in background -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <svg class="absolute -top-4 -left-8 w-48 h-48 text-green-700 opacity-[0.04]" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute -top-4 -left-8 w-48 h-48 text-vibe-olive opacity-[0.04]" viewBox="0 0 200 200" fill="currentColor">
             <path d="M40 180 C30 140, 20 100, 40 60 C50 40, 70 20, 100 10 C90 40, 85 70, 90 100 C60 90, 45 110, 40 180Z"/>
             <path d="M90 100 C95 70, 105 50, 100 10 C120 30, 130 60, 120 100 C110 80, 100 85, 90 100Z"/>
         </svg>
-        <svg class="absolute top-[30%] -right-6 w-56 h-56 text-green-700 opacity-[0.035] rotate-[160deg]" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute top-[30%] -right-6 w-56 h-56 text-vibe-olive opacity-[0.035] rotate-[160deg]" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 190 C95 150, 80 110, 50 80 C40 70, 25 65, 10 70 C30 60, 55 55, 80 65 C70 50, 55 35, 30 25 C55 25, 75 35, 90 55 C85 40, 75 20, 60 5 C80 15, 95 35, 100 60 C105 35, 120 15, 140 5 C125 20, 115 40, 110 55 C125 35, 145 25, 170 25 C145 35, 130 50, 120 65 C145 55, 170 60, 190 70 C175 65, 160 70, 150 80 C120 110, 105 150, 100 190Z"/>
         </svg>
-        <svg class="absolute bottom-[15%] -left-4 w-40 h-40 text-green-700 opacity-[0.03] rotate-12" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute bottom-[15%] -left-4 w-40 h-40 text-vibe-olive opacity-[0.03] rotate-12" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 190 C98 160, 90 130, 75 105 C65 100, 50 100, 40 105 C55 95, 65 90, 75 95 C65 80, 50 70, 35 65 C55 65, 70 72, 80 85 C75 65, 65 50, 50 40 C70 45, 82 58, 88 75 C86 55, 80 35, 70 20 C85 30, 92 50, 95 75 C95 55, 100 35, 110 20 C108 40, 102 60, 100 80 C110 60, 118 45, 135 40 C122 52, 112 65, 105 80 C115 72, 130 65, 145 65 C130 72, 118 80, 110 90 C120 88, 135 90, 150 95 C135 95, 120 98, 110 105 C120 115, 105 140, 100 190Z"/>
         </svg>
-        <svg class="absolute bottom-[40%] -right-2 w-32 h-32 text-green-700 opacity-[0.03] -rotate-45" viewBox="0 0 100 100" fill="currentColor">
+        <svg class="absolute bottom-[40%] -right-2 w-32 h-32 text-vibe-olive opacity-[0.03] -rotate-45" viewBox="0 0 100 100" fill="currentColor">
             <path d="M50 95 C48 70, 35 50, 15 35 C35 38, 48 50, 50 65 C52 50, 65 38, 85 35 C65 50, 52 70, 50 95Z"/>
         </svg>
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="bg-vibe-cream/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="flex items-center space-x-3">
                     <!-- VCL Vine & Lotus Logo -->
                     <img src="images/vcl-logo.svg" alt="Vibe Connection Lounge logo" width="120" height="44" class="flex-shrink-0">
                     <span class="text-2xl font-bold">
-                        <span class="text-vibe-teal italic">Vibe</span>
+                        <span class="text-vibe-sage italic">Vibe</span>
                         <span class="text-gray-800"> Connection Lounge</span>
                     </span>
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html#home" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">Home</a>
-                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">Bazaar</a>
-                    <a href="index.html#giving-circle" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">Giving Circle</a>
-                    <a href="index.html#youtube" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">YouTube</a>
-                    <a href="about.html" class="text-gray-700 hover:text-vibe-teal transition-colors font-medium">About</a>
+                    <a href="index.html#home" class="text-gray-700 hover:text-vibe-sage transition-colors font-medium">Home</a>
+                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-sage transition-colors font-medium">Bazaar</a>
+                    <a href="index.html#giving-circle" class="text-gray-700 hover:text-vibe-sage transition-colors font-medium">Giving Circle</a>
+                    <a href="index.html#youtube" class="text-gray-700 hover:text-vibe-sage transition-colors font-medium">YouTube</a>
+                    <a href="about.html" class="text-gray-700 hover:text-vibe-sage transition-colors font-medium">About</a>
                 </div>
                 <div class="flex gap-3">
-                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-all font-medium shadow-lg">
+                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-sage text-white px-6 py-2 rounded-full hover:bg-vibe-sage-dark transition-all font-medium shadow-lg">
                         Give
                     </a>
                     <a href="#register" class="bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-colors font-medium">
@@ -87,7 +100,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-vibe-teal to-vibe-teal-dark text-white py-20">
+    <section class="bg-gradient-to-br from-vibe-sage to-vibe-olive text-white py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6">Welcome to Vibe Bazaar</h1>
             <p class="text-xl md:text-2xl mb-4">We're stoked to have you in the Vibe Connection Lounge marketplace.</p>
@@ -108,27 +121,27 @@
                         <h2 class="text-3xl font-bold text-gray-900">The Deal</h2>
                     </div>
                     <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                        We keep it simple with a <strong class="text-vibe-teal">flat 10% commission</strong> on every sale.
+                        We keep it simple with a <strong class="text-vibe-sage">flat 10% commission</strong> on every sale.
                         No hidden fees, just growth. Payouts are processed <strong>monthly</strong> directly to your account.
                     </p>
-                    <div class="mt-6 p-6 bg-white rounded-xl border-2 border-vibe-teal/20">
-                        <h3 class="text-xl font-bold text-vibe-teal mb-3">Where Your 10% Goes</h3>
+                    <div class="mt-6 p-6 bg-white rounded-xl border-2 border-vibe-sage/20">
+                        <h3 class="text-xl font-bold text-vibe-sage mb-3">Where Your 10% Goes</h3>
                         <p class="text-gray-700 mb-4">Every commission directly funds the growth of our community:</p>
                         <ul class="space-y-2 text-gray-700">
                             <li class="flex items-start gap-2">
-                                <span class="text-vibe-teal font-bold">✓</span>
+                                <span class="text-vibe-sage font-bold">✓</span>
                                 <span><strong>Platform improvements</strong> to enhance your selling experience</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-vibe-teal font-bold">✓</span>
+                                <span class="text-vibe-sage font-bold">✓</span>
                                 <span><strong>Bringing in expert speakers & mentors</strong> for exclusive 1-on-1 sessions</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-vibe-teal font-bold">✓</span>
+                                <span class="text-vibe-sage font-bold">✓</span>
                                 <span><strong>Free mentorship access</strong> for premium website subscribers</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-vibe-teal font-bold">✓</span>
+                                <span class="text-vibe-sage font-bold">✓</span>
                                 <span><strong>Community events</strong> that drive traffic to vendor products</span>
                             </li>
                         </ul>
@@ -148,15 +161,15 @@
                     </p>
                     <ul class="space-y-3 text-lg text-gray-700">
                         <li class="flex items-start gap-3">
-                            <span class="text-vibe-teal font-bold">✓</span>
+                            <span class="text-vibe-sage font-bold">✓</span>
                             <span><strong>Shipping:</strong> You choose your carriers and rates</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-vibe-teal font-bold">✓</span>
+                            <span class="text-vibe-sage font-bold">✓</span>
                             <span><strong>Packaging:</strong> Brand it your way</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-vibe-teal font-bold">✓</span>
+                            <span class="text-vibe-sage font-bold">✓</span>
                             <span><strong>Tracking updates:</strong> Keep customers in the loop</span>
                         </li>
                     </ul>
@@ -214,7 +227,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="register" class="py-20 bg-gradient-to-br from-vibe-teal to-vibe-teal-dark text-white">
+    <section id="register" class="py-20 bg-gradient-to-br from-vibe-sage to-vibe-olive text-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to vibe?</h2>
             <p class="text-xl mb-10">Join the marketplace where your brand meets our community.</p>
@@ -223,21 +236,21 @@
                 <h3 class="text-2xl font-bold mb-6">Next Steps:</h3>
                 <div class="space-y-4">
                     <div class="flex items-start gap-4">
-                        <span class="bg-white text-vibe-teal font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</span>
+                        <span class="bg-white text-vibe-sage font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</span>
                         <div>
                             <h4 class="font-semibold text-lg mb-1">Register as a Vendor</h4>
                             <p class="text-white/80">Fill out our simple application form</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
-                        <span class="bg-white text-vibe-teal font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</span>
+                        <span class="bg-white text-vibe-sage font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</span>
                         <div>
                             <h4 class="font-semibold text-lg mb-1">Upload Products</h4>
                             <p class="text-white/80">Add your products to the marketplace</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
-                        <span class="bg-white text-vibe-teal font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
+                        <span class="bg-white text-vibe-sage font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
                         <div>
                             <h4 class="font-semibold text-lg mb-1">Start Selling</h4>
                             <p class="text-white/80">Watch your brand grow in our community</p>
@@ -247,7 +260,7 @@
             </div>
 
             <div class="space-y-4">
-                <a href="#" class="inline-block bg-white text-vibe-teal px-10 py-5 rounded-full hover:bg-gray-100 transition-all font-bold text-xl shadow-2xl">
+                <a href="#" class="inline-block bg-white text-vibe-sage px-10 py-5 rounded-full hover:bg-gray-100 transition-all font-bold text-xl shadow-2xl">
                     Register as a Vendor
                 </a>
                 <p class="text-white/80">
@@ -258,41 +271,41 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-vibe-brown text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">
-                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                        <span class="text-vibe-sage italic">Vibe</span> Connection Lounge
                     </h3>
                     <p class="text-gray-400">Where entrepreneurs build momentum.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Shop</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.html#bazaar" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">New Arrivals</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Best Sellers</a></li>
+                        <li><a href="index.html#bazaar" class="hover:text-vibe-sage transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">Best Sellers</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Community</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.html#giving-circle" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
-                        <li><a href="index.html#speakers" class="hover:text-vibe-teal transition-colors">Events</a></li>
-                        <li><a href="index.html#youtube" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
+                        <li><a href="index.html#giving-circle" class="hover:text-vibe-sage transition-colors">Giving Circle</a></li>
+                        <li><a href="index.html#speakers" class="hover:text-vibe-sage transition-colors">Events</a></li>
+                        <li><a href="index.html#youtube" class="hover:text-vibe-sage transition-colors">YouTube</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Vendors</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                        <li><a href="become-vendor.html" class="hover:text-vibe-sage transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">Support</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+            <div class="border-t border-vibe-brown-dark pt-8 text-center text-gray-400">
                 <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
             </div>
         </div>

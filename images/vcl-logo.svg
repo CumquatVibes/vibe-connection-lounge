@@ -2,13 +2,13 @@
   <!-- VCL Logo: Open Lotus with Flowing Vine -->
 
   <!-- Left flowing vine -->
-  <g stroke="#0D9488" stroke-width="2.2" stroke-linecap="round">
+  <g stroke="#5A7A63" stroke-width="2.2" stroke-linecap="round">
     <path d="M12 42 C24 40, 36 36, 52 32"/>
     <!-- Left leaf 1 -->
-    <path d="M24 38 C20 30, 26 24, 30 28 C28 34, 24 38, 24 38" fill="#0D9488" opacity="0.35" stroke="none"/>
+    <path d="M24 38 C20 30, 26 24, 30 28 C28 34, 24 38, 24 38" fill="#5A7A63" opacity="0.35" stroke="none"/>
     <path d="M24 38 C20 30, 26 24, 30 28"/>
     <!-- Left leaf 2 -->
-    <path d="M38 34 C36 42, 40 48, 44 44 C42 38, 38 34, 38 34" fill="#0D9488" opacity="0.35" stroke="none"/>
+    <path d="M38 34 C36 42, 40 48, 44 44 C42 38, 38 34, 38 34" fill="#5A7A63" opacity="0.35" stroke="none"/>
     <path d="M38 34 C36 42, 40 48, 44 44"/>
   </g>
 
@@ -16,48 +16,48 @@
   <g stroke-linecap="round" stroke-linejoin="round">
     <!-- Far left petal -->
     <path d="M62 36 C56 22, 60 10, 68 4 C72 12, 72 26, 68 36"
-          fill="#0D9488" opacity="0.18" stroke="#0D9488" stroke-width="2"/>
+          fill="#5A7A63" opacity="0.18" stroke="#5A7A63" stroke-width="2"/>
 
     <!-- Left petal -->
     <path d="M72 34 C68 18, 74 6, 82 2 C86 10, 84 24, 80 34"
-          fill="#0D9488" opacity="0.25" stroke="#0D9488" stroke-width="2"/>
+          fill="#5A7A63" opacity="0.25" stroke="#5A7A63" stroke-width="2"/>
 
     <!-- Center-left petal -->
     <path d="M82 32 C80 14, 88 2, 94 0 C98 8, 96 22, 92 32"
-          fill="#0D9488" opacity="0.35" stroke="#0D9488" stroke-width="2"/>
+          fill="#5A7A63" opacity="0.35" stroke="#5A7A63" stroke-width="2"/>
 
     <!-- Center petal (tallest, orange accent) -->
     <path d="M92 30 C92 12, 98 0, 104 -2 C110 4, 110 18, 108 30"
-          fill="#eb7e43" opacity="0.3" stroke="#eb7e43" stroke-width="2.2"/>
+          fill="#D4956A" opacity="0.3" stroke="#D4956A" stroke-width="2.2"/>
 
     <!-- Center-right petal -->
     <path d="M108 32 C106 14, 114 2, 120 0 C124 10, 120 24, 116 32"
-          fill="#0D9488" opacity="0.35" stroke="#0D9488" stroke-width="2"/>
+          fill="#5A7A63" opacity="0.35" stroke="#5A7A63" stroke-width="2"/>
 
     <!-- Right petal -->
     <path d="M118 34 C116 18, 122 6, 130 2 C134 12, 130 26, 126 34"
-          fill="#0D9488" opacity="0.25" stroke="#0D9488" stroke-width="2"/>
+          fill="#5A7A63" opacity="0.25" stroke="#5A7A63" stroke-width="2"/>
 
     <!-- Far right petal -->
     <path d="M128 36 C126 22, 132 10, 140 4 C142 14, 140 28, 136 36"
-          fill="#0D9488" opacity="0.18" stroke="#0D9488" stroke-width="2"/>
+          fill="#5A7A63" opacity="0.18" stroke="#5A7A63" stroke-width="2"/>
 
     <!-- Lotus base/cup -->
     <path d="M58 40 C72 48, 90 50, 100 50 C110 50, 128 48, 142 40"
-          fill="none" stroke="#0D9488" stroke-width="2.4"/>
+          fill="none" stroke="#5A7A63" stroke-width="2.4"/>
 
     <!-- Inner glow dot -->
-    <circle cx="100" cy="24" r="3.5" fill="#eb7e43" opacity="0.6"/>
+    <circle cx="100" cy="24" r="3.5" fill="#D4956A" opacity="0.6"/>
   </g>
 
   <!-- Right flowing vine -->
-  <g stroke="#0D9488" stroke-width="2.2" stroke-linecap="round">
+  <g stroke="#5A7A63" stroke-width="2.2" stroke-linecap="round">
     <path d="M146 32 C160 36, 172 40, 188 42"/>
     <!-- Right leaf 1 -->
-    <path d="M160 36 C164 28, 170 26, 172 30 C168 34, 162 36, 160 36" fill="#0D9488" opacity="0.35" stroke="none"/>
+    <path d="M160 36 C164 28, 170 26, 172 30 C168 34, 162 36, 160 36" fill="#5A7A63" opacity="0.35" stroke="none"/>
     <path d="M160 36 C164 28, 170 26, 172 30"/>
     <!-- Right leaf 2 -->
-    <path d="M178 42 C180 48, 186 50, 188 46 C184 42, 178 42, 178 42" fill="#0D9488" opacity="0.35" stroke="none"/>
+    <path d="M178 42 C180 48, 186 50, 188 46 C184 42, 178 42, 178 42" fill="#5A7A63" opacity="0.35" stroke="none"/>
     <path d="M178 42 C180 48, 186 50, 188 46"/>
     <!-- End curl -->
     <path d="M188 42 C194 42, 196 38, 194 34"/>

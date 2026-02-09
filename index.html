@@ -17,24 +17,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'vibe-teal': '#41e0d0',
-                        'vibe-teal-dark': '#0D9488',
+                        'vibe-sage': '#7C9885',
+                        'vibe-sage-dark': '#5A7A63',
+                        'vibe-sage-light': '#A8BFA8',
+                        'vibe-cream': '#F5F0E8',
+                        'vibe-olive': '#4A5D3A',
+                        'vibe-olive-dark': '#3A4D2E',
                         'vibe-purple': '#442e66',
-                        'vibe-purple-dark': '#2d1e44',
-                        'vibe-orange': '#ffb088',
-                        'vibe-orange-dark': '#eb7e43',
-                        'vibe-gold': '#ffb606',
-                        'vibe-cream': '#FAF8F3',
+                        'vibe-orange': '#D4956A',
+                        'vibe-orange-dark': '#B87A4F',
+                        'vibe-gold': '#C4A96A',
+                        'vibe-brown': '#3D2E1F',
+                        'vibe-brown-dark': '#2A1F14',
                     },
                     fontFamily: {
-                        'serif': ['Lusitana', 'Georgia', 'serif'],
+                        'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
                         'sans': ['Manrope', 'system-ui', 'sans-serif'],
                     },
                 }
@@ -50,16 +54,16 @@
         body {
             font-family: 'Manrope', sans-serif;
             background-image:
-                url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2341e0d0' fill-opacity='0.05'%3E%3Cpath d='M40 0c-4.4 11-11 17.6-22 22 11 4.4 17.6 11 22 22 4.4-11 11-17.6 22-22-11-4.4-17.6-11-22-22zM10 20c-2.2 5.5-5.5 8.8-11 11 5.5 2.2 8.8 5.5 11 11 2.2-5.5 5.5-8.8 11-11-5.5-2.2-8.8-5.5-11-11zM60 60c-2.2 5.5-5.5 8.8-11 11 5.5 2.2 8.8 5.5 11 11 2.2-5.5 5.5-8.8 11-11-5.5-2.2-8.8-5.5-11-11z'/%3E%3C/g%3E%3C/svg%3E");
+                url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%237C9885' fill-opacity='0.05'%3E%3Cpath d='M40 0c-4.4 11-11 17.6-22 22 11 4.4 17.6 11 22 22 4.4-11 11-17.6 22-22-11-4.4-17.6-11-22-22zM10 20c-2.2 5.5-5.5 8.8-11 11 5.5 2.2 8.8 5.5 11 11 2.2-5.5 5.5-8.8 11-11-5.5-2.2-8.8-5.5-11-11zM60 60c-2.2 5.5-5.5 8.8-11 11 5.5 2.2 8.8 5.5 11 11 2.2-5.5 5.5-8.8 11-11-5.5-2.2-8.8-5.5-11-11z'/%3E%3C/g%3E%3C/svg%3E");
             background-size: 80px 80px;
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Lusitana', serif;
+            font-family: 'Cormorant Garamond', serif;
         }
 
         .hero-gradient {
-            background: linear-gradient(135deg, #442e66 0%, #2d1e44 50%, #1a0f2e 100%);
+            background: linear-gradient(135deg, #4A5D3A 0%, #3A4D2E 50%, #2A1F14 100%);
         }
 
         .fade-in {
@@ -105,7 +109,7 @@
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #41e0d0, transparent);
+            background: linear-gradient(90deg, transparent, #7C9885, transparent);
             opacity: 0;
             transition: opacity 0.6s ease;
         }
@@ -116,8 +120,8 @@
 
         .tropical-bg {
             background-image:
-                url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2341e0d0' fill-opacity='0.08'%3E%3Cpath d='M100 0 Q80 40 100 80 Q120 40 100 0 M100 80 Q85 100 100 120 M100 80 Q115 100 100 120' stroke='%2341e0d0' stroke-opacity='0.1' stroke-width='2' fill='none'/%3E%3C/g%3E%3C/svg%3E"),
-                url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffb088' fill-opacity='0.05'%3E%3Ccircle cx='50' cy='50' r='30' /%3E%3Ccircle cx='150' cy='150' r='40' /%3E%3C/g%3E%3C/svg%3E");
+                url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%237C9885' fill-opacity='0.08'%3E%3Cpath d='M100 0 Q80 40 100 80 Q120 40 100 0 M100 80 Q85 100 100 120 M100 80 Q115 100 100 120' stroke='%237C9885' stroke-opacity='0.1' stroke-width='2' fill='none'/%3E%3C/g%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4956A' fill-opacity='0.05'%3E%3Ccircle cx='50' cy='50' r='30' /%3E%3Ccircle cx='150' cy='150' r='40' /%3E%3C/g%3E%3C/svg%3E");
             background-size: 200px 200px, 300px 300px;
             background-position: 0 0, 50px 50px;
         }
@@ -139,52 +143,52 @@
     <!-- Tropical plant accents scattered in background -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <!-- Top-left monstera leaf -->
-        <svg class="absolute -top-4 -left-8 w-48 h-48 text-green-700 opacity-[0.04]" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute -top-4 -left-8 w-48 h-48 text-vibe-olive opacity-[0.04]" viewBox="0 0 200 200" fill="currentColor">
             <path d="M40 180 C30 140, 20 100, 40 60 C50 40, 70 20, 100 10 C90 40, 85 70, 90 100 C60 90, 45 110, 40 180Z"/>
             <path d="M90 100 C95 70, 105 50, 100 10 C120 30, 130 60, 120 100 C110 80, 100 85, 90 100Z"/>
         </svg>
         <!-- Right palm frond (upper) -->
-        <svg class="absolute top-[30%] -right-6 w-56 h-56 text-green-700 opacity-[0.035] rotate-[160deg]" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute top-[30%] -right-6 w-56 h-56 text-vibe-olive opacity-[0.035] rotate-[160deg]" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 190 C95 150, 80 110, 50 80 C40 70, 25 65, 10 70 C30 60, 55 55, 80 65 C70 50, 55 35, 30 25 C55 25, 75 35, 90 55 C85 40, 75 20, 60 5 C80 15, 95 35, 100 60 C105 35, 120 15, 140 5 C125 20, 115 40, 110 55 C125 35, 145 25, 170 25 C145 35, 130 50, 120 65 C145 55, 170 60, 190 70 C175 65, 160 70, 150 80 C120 110, 105 150, 100 190Z"/>
         </svg>
         <!-- Bottom-left fern -->
-        <svg class="absolute bottom-[15%] -left-4 w-40 h-40 text-green-700 opacity-[0.03] rotate-12" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute bottom-[15%] -left-4 w-40 h-40 text-vibe-olive opacity-[0.03] rotate-12" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 190 C98 160, 90 130, 75 105 C65 100, 50 100, 40 105 C55 95, 65 90, 75 95 C65 80, 50 70, 35 65 C55 65, 70 72, 80 85 C75 65, 65 50, 50 40 C70 45, 82 58, 88 75 C86 55, 80 35, 70 20 C85 30, 92 50, 95 75 C95 55, 100 35, 110 20 C108 40, 102 60, 100 80 C110 60, 118 45, 135 40 C122 52, 112 65, 105 80 C115 72, 130 65, 145 65 C130 72, 118 80, 110 90 C120 88, 135 90, 150 95 C135 95, 120 98, 110 105 C120 115, 105 140, 100 190Z"/>
         </svg>
         <!-- Right bottom small leaf -->
-        <svg class="absolute bottom-[40%] -right-2 w-32 h-32 text-green-700 opacity-[0.03] -rotate-45" viewBox="0 0 100 100" fill="currentColor">
+        <svg class="absolute bottom-[40%] -right-2 w-32 h-32 text-vibe-olive opacity-[0.03] -rotate-45" viewBox="0 0 100 100" fill="currentColor">
             <path d="M50 95 C48 70, 35 50, 15 35 C35 38, 48 50, 50 65 C52 50, 65 38, 85 35 C65 50, 52 70, 50 95Z"/>
         </svg>
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
+    <nav class="bg-vibe-cream/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center space-x-3">
                     <!-- VCL Vine & Lotus Logo -->
                     <img src="images/vcl-logo.svg" alt="Vibe Connection Lounge logo" width="120" height="44" class="flex-shrink-0">
                     <span class="text-2xl font-serif font-bold">
-                        <span class="text-vibe-purple italic">Vibe</span>
+                        <span class="text-vibe-olive italic">Vibe</span>
                         <span class="text-gray-800"> Connection Lounge</span>
                     </span>
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#mission" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mission</a>
-                    <a href="mentorship.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mentorship</a>
-                    <a href="#bazaar" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Bazaar</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Blog</a>
-                    <a href="youtube.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">YouTube</a>
-                    <a href="about.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">About</a>
+                    <a href="#mission" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">Mission</a>
+                    <a href="mentorship.html" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">Mentorship</a>
+                    <a href="#bazaar" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">Bazaar</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">Blog</a>
+                    <a href="youtube.html" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">YouTube</a>
+                    <a href="about.html" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">About</a>
                 </div>
                 <div class="flex gap-3">
-                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-all hover-lift font-medium shadow-lg">
+                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-sage text-white px-6 py-2 rounded-full hover:bg-vibe-sage-dark transition-all hover-lift font-medium shadow-lg">
                         Give
                     </a>
                     <a href="#subscribe" class="hidden sm:inline-block bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-medium shadow-lg">
                         Join Community
                     </a>
-                    <a href="become-vendor.html" class="bg-vibe-purple text-white px-6 py-2 rounded-full hover:bg-vibe-purple-dark transition-all hover-lift font-medium shadow-lg">
+                    <a href="become-vendor.html" class="bg-vibe-olive text-white px-6 py-2 rounded-full hover:bg-vibe-olive-dark transition-all hover-lift font-medium shadow-lg">
                         Become a Seller
                     </a>
                 </div>
@@ -195,14 +199,14 @@
     <!-- Hero Section -->
     <section id="home" class="hero-gradient text-white py-32 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-20 left-10 w-64 h-64 bg-vibe-teal rounded-full blur-3xl"></div>
+            <div class="absolute top-20 left-10 w-64 h-64 bg-vibe-sage rounded-full blur-3xl"></div>
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-vibe-orange rounded-full blur-3xl"></div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center fade-in">
                 <h1 class="text-6xl md:text-7xl font-bold mb-8 leading-tight">
                     Where entrepreneurs<br>
-                    <span class="italic text-vibe-teal">build momentum.</span>
+                    <span class="italic text-vibe-sage-light">build momentum.</span>
                 </h1>
                 <p class="text-2xl md:text-3xl mb-4 text-white/90 max-w-3xl mx-auto font-serif italic">
                     Empower Your Mind, Body & Soul
@@ -214,7 +218,7 @@
                     <a href="mentorship.html" class="pulse-glow bg-vibe-orange text-white px-10 py-5 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-semibold text-lg shadow-2xl">
                         Explore Mentorship →
                     </a>
-                    <a href="#bazaar" class="bg-transparent border-2 border-white text-white px-10 py-5 rounded-full hover:bg-white hover:text-vibe-purple transition-all hover-lift font-semibold text-lg">
+                    <a href="#bazaar" class="bg-transparent border-2 border-white text-white px-10 py-5 rounded-full hover:bg-white hover:text-vibe-olive transition-all hover-lift font-semibold text-lg">
                         Visit the Bazaar →
                     </a>
                 </div>
@@ -223,7 +227,7 @@
     </section>
 
     <!-- Stats Counter Section -->
-    <section class="py-16 bg-gradient-to-br from-vibe-teal to-vibe-purple text-white scroll-reveal tropical-bg">
+    <section class="py-16 bg-gradient-to-br from-vibe-sage to-vibe-olive text-white scroll-reveal tropical-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 text-center">
                 <div>
@@ -250,9 +254,9 @@
     <section id="mission" class="py-24 bg-white section-transition scroll-reveal">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-5xl md:text-6xl font-bold text-vibe-purple mb-8">Our Mission</h2>
+                <h2 class="text-5xl md:text-6xl font-bold text-vibe-olive mb-8">Our Mission</h2>
                 <p class="text-2xl text-gray-700 leading-relaxed mb-6">
-                    We believe in the power of <span class="text-vibe-orange font-semibold">authentic connection</span> and <span class="text-vibe-teal font-semibold">holistic growth</span>.
+                    We believe in the power of <span class="text-vibe-orange font-semibold">authentic connection</span> and <span class="text-vibe-sage font-semibold">holistic growth</span>.
                 </p>
                 <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
                     Vibe Connection Lounge is more than a marketplace—it's a movement. We empower entrepreneurs and conscious creators to build momentum through transformational mentorship, curated wellness products, and a community that uplifts every member.
@@ -264,7 +268,7 @@
                     <div class="mb-6 rounded-xl overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop" alt="Person in peaceful meditation" class="w-full h-48 object-cover rounded-xl">
                     </div>
-                    <h3 class="text-2xl font-bold text-vibe-purple mb-3">Mind</h3>
+                    <h3 class="text-2xl font-bold text-vibe-olive mb-3">Mind</h3>
                     <p class="text-gray-700">Expand your consciousness through mentorship, learning, and personal development.</p>
                 </div>
                 <div class="text-center p-8 bg-vibe-cream rounded-2xl transition-all hover-lift overflow-hidden">
@@ -278,7 +282,7 @@
                     <div class="mb-6 rounded-xl overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=400&h=300&fit=crop" alt="Person in peaceful nature connection" class="w-full h-48 object-cover rounded-xl">
                     </div>
-                    <h3 class="text-2xl font-bold text-vibe-teal mb-3">Soul</h3>
+                    <h3 class="text-2xl font-bold text-vibe-sage mb-3">Soul</h3>
                     <p class="text-gray-700">Connect deeply with yourself and others through authentic community.</p>
                 </div>
             </div>
@@ -286,7 +290,7 @@
     </section>
 
     <!-- Premium Mentorship Section -->
-    <section id="mentorship" class="py-24 bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white section-transition">
+    <section id="mentorship" class="py-24 bg-gradient-to-br from-vibe-olive to-vibe-olive-dark text-white section-transition">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
@@ -294,7 +298,7 @@
                         1-ON-1 MENTORSHIP PROGRAM
                     </div>
                     <h2 class="text-4xl md:text-5xl font-bold mb-4">Emotional Release &</h2>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 italic text-vibe-teal">Recalibration</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 italic text-vibe-sage-light">Recalibration</h2>
                     <p class="text-xl text-white/90 mb-8 leading-relaxed">
                         A 10-12 week transformational journey focused on emotional awareness, nervous system regulation, and embodied healing for lasting change.
                     </p>
@@ -351,7 +355,7 @@
     <section id="bazaar" class="py-24 bg-vibe-cream section-transition">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-5xl md:text-6xl font-bold text-vibe-purple mb-4">Vibe Bazaar</h2>
+                <h2 class="text-5xl md:text-6xl font-bold text-vibe-olive mb-4">Vibe Bazaar</h2>
                 <p class="text-2xl text-vibe-orange font-medium mb-4">Curated Finds for Mind, Body & Soul</p>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Explore our handpicked collection of wellness products from trusted vendors.<br>
@@ -366,7 +370,7 @@
                     <div class="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 p-8 flex flex-col justify-end">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Essential Oil Diffuser</h3>
                         <p class="text-sm text-gray-700 mb-4">Calm & Soothe</p>
-                        <button class="bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-all font-medium shadow-md">
+                        <button class="bg-vibe-sage text-white px-6 py-2 rounded-full hover:bg-vibe-sage-dark transition-all font-medium shadow-md">
                             Shop Now
                         </button>
                     </div>
@@ -388,7 +392,7 @@
                     <div class="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 p-8 flex flex-col justify-end">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Meditation Headphones</h3>
                         <p class="text-sm text-gray-700 mb-4">Immersive Sound</p>
-                        <button class="bg-vibe-purple text-white px-6 py-2 rounded-full hover:bg-vibe-purple-dark transition-all font-medium shadow-md">
+                        <button class="bg-vibe-olive text-white px-6 py-2 rounded-full hover:bg-vibe-olive-dark transition-all font-medium shadow-md">
                             Shop Now
                         </button>
                     </div>
@@ -399,7 +403,7 @@
                     <div class="aspect-square bg-gradient-to-br from-green-100 to-green-200 p-8 flex flex-col justify-end">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Herbal Supplements</h3>
                         <p class="text-sm text-gray-700 mb-4">Natural Wellness</p>
-                        <button class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-all font-medium shadow-md">
+                        <button class="bg-vibe-sage-dark text-white px-6 py-2 rounded-full hover:bg-vibe-olive transition-all font-medium shadow-md">
                             Shop Now
                         </button>
                     </div>
@@ -410,7 +414,7 @@
             <div class="bg-white rounded-2xl p-8 max-w-4xl mx-auto shadow-lg">
                 <div class="flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
-                        <h3 class="text-2xl font-bold text-vibe-purple mb-4">Shop with Purpose</h3>
+                        <h3 class="text-2xl font-bold text-vibe-olive mb-4">Shop with Purpose</h3>
                         <p class="text-gray-700 mb-4">
                             Our marketplace features independent vendors who share our values of quality, authenticity, and community.
                         </p>
@@ -419,7 +423,7 @@
                         </p>
                     </div>
                     <div class="flex-shrink-0">
-                        <a href="become-vendor.html" class="inline-block bg-vibe-purple text-white px-8 py-4 rounded-full hover:bg-vibe-purple-dark transition-all hover-lift font-semibold shadow-lg">
+                        <a href="become-vendor.html" class="inline-block bg-vibe-olive text-white px-8 py-4 rounded-full hover:bg-vibe-olive-dark transition-all hover-lift font-semibold shadow-lg">
                             Become a Vendor
                         </a>
                     </div>
@@ -427,7 +431,7 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="#bazaar" class="inline-flex items-center gap-2 bg-vibe-purple text-white px-10 py-4 rounded-full hover:bg-vibe-purple-dark transition-all hover-lift font-semibold text-lg shadow-lg">
+                <a href="#bazaar" class="inline-flex items-center gap-2 bg-vibe-olive text-white px-10 py-4 rounded-full hover:bg-vibe-olive-dark transition-all hover-lift font-semibold text-lg shadow-lg">
                     Explore All Products
                     <span>→</span>
                 </a>
@@ -438,14 +442,14 @@
     <!-- Testimonials Section -->
     <section class="py-24 bg-vibe-cream scroll-reveal tropical-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-5xl md:text-6xl font-bold text-center text-vibe-purple mb-4">Transformation Stories</h2>
+            <h2 class="text-5xl md:text-6xl font-bold text-center text-vibe-olive mb-4">Transformation Stories</h2>
             <p class="text-center text-gray-600 mb-16 text-xl">Real results from real entrepreneurs</p>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-teal to-vibe-purple flex items-center justify-center text-white text-2xl font-bold">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-sage to-vibe-olive flex items-center justify-center text-white text-2xl font-bold">
                             S
                         </div>
                         <div>
@@ -465,7 +469,7 @@
                 <!-- Testimonial 2 -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-purple to-vibe-orange flex items-center justify-center text-white text-2xl font-bold">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-olive to-vibe-orange flex items-center justify-center text-white text-2xl font-bold">
                             M
                         </div>
                         <div>
@@ -485,7 +489,7 @@
                 <!-- Testimonial 3 -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-orange to-vibe-teal flex items-center justify-center text-white text-2xl font-bold">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-vibe-orange to-vibe-sage flex items-center justify-center text-white text-2xl font-bold">
                             A
                         </div>
                         <div>
@@ -507,7 +511,7 @@
             <div class="mt-16 text-center">
                 <div class="inline-block bg-white rounded-full px-8 py-4 shadow-lg">
                     <span class="text-gray-600">Trusted by </span>
-                    <span class="font-bold text-vibe-purple text-2xl">2,500+</span>
+                    <span class="font-bold text-vibe-olive text-2xl">2,500+</span>
                     <span class="text-gray-600"> conscious entrepreneurs</span>
                 </div>
             </div>
@@ -518,7 +522,7 @@
     <section id="giving-circle" class="py-24 bg-white section-transition scroll-reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="bg-gradient-to-br from-vibe-purple to-vibe-purple-dark rounded-3xl p-12 text-white shadow-2xl">
+                <div class="bg-gradient-to-br from-vibe-olive to-vibe-olive-dark rounded-3xl p-12 text-white shadow-2xl">
                     <div class="text-center">
                         <div class="inline-block bg-vibe-orange px-4 py-2 rounded-full text-sm font-bold mb-6">
                             COMMUNITY IMPACT
@@ -526,26 +530,26 @@
                         <p class="text-xl mb-8">A portion of every transaction supports:</p>
                         <div class="space-y-4 text-left">
                             <div class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-2xl">✓</span>
+                                <span class="text-vibe-sage-light text-2xl">✓</span>
                                 <p>Entrepreneur grants and mentorship scholarships</p>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-2xl">✓</span>
+                                <span class="text-vibe-sage-light text-2xl">✓</span>
                                 <p>Small business development resources</p>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-2xl">✓</span>
+                                <span class="text-vibe-sage-light text-2xl">✓</span>
                                 <p>Community wellness initiatives</p>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-2xl">✓</span>
+                                <span class="text-vibe-sage-light text-2xl">✓</span>
                                 <p>Educational programs for underserved communities</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h2 class="text-5xl md:text-6xl font-bold text-vibe-purple mb-6">The Giving Circle</h2>
+                    <h2 class="text-5xl md:text-6xl font-bold text-vibe-olive mb-6">The Giving Circle</h2>
                     <p class="text-xl text-gray-700 mb-6 leading-relaxed">
                         We believe in growing together. The Giving Circle is our commitment to giving back—supporting causes that matter to our community.
                     </p>
@@ -561,7 +565,7 @@
     </section>
 
     <!-- Subscribe Section -->
-    <section id="subscribe" class="py-24 bg-gradient-to-br from-vibe-orange to-vibe-orange-dark text-white section-transition">
+    <section id="subscribe" class="py-24 bg-gradient-to-br from-vibe-sage-dark to-vibe-olive text-white section-transition">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-5xl md:text-6xl font-bold mb-6">Join the Community</h2>
             <p class="text-xl mb-12 max-w-2xl mx-auto">
@@ -589,7 +593,7 @@
                     </div>
                 </div>
 
-                <button class="w-full bg-white text-vibe-orange px-10 py-5 rounded-full hover:bg-gray-100 transition-all hover-lift font-bold text-lg shadow-2xl">
+                <button class="w-full bg-white text-vibe-sage-dark px-10 py-5 rounded-full hover:bg-gray-100 transition-all hover-lift font-bold text-lg shadow-2xl">
                     Get Started Today
                 </button>
                 <p class="text-white/70 text-sm mt-4">Cancel anytime. No long-term commitments.</p>
@@ -598,7 +602,7 @@
     </section>
 
     <!-- YouTube Preview -->
-    <section class="py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white section-transition">
+    <section class="py-24 bg-gradient-to-br from-vibe-brown to-vibe-brown-dark text-white section-transition">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-5xl md:text-6xl font-bold mb-4">Watch & Learn</h2>
@@ -615,12 +619,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-vibe-brown text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <h3 class="text-xl font-serif font-bold mb-4">
-                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                        <span class="text-vibe-sage italic">Vibe</span> Connection Lounge
                     </h3>
                     <p class="text-gray-400 mb-4">Empower Your Mind, Body & Soul</p>
                     <a href="https://richardabreu.studio" target="_blank" class="inline-block text-xs text-gray-500 hover:text-vibe-orange transition-colors border border-gray-700 hover:border-vibe-orange px-3 py-1 rounded-full">
@@ -630,30 +634,30 @@
                 <div>
                     <h4 class="font-semibold mb-4">Explore</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="mentorship.html" class="hover:text-vibe-teal transition-colors">Mentorship</a></li>
-                        <li><a href="#bazaar" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
-                        <li><a href="#subscribe" class="hover:text-vibe-teal transition-colors">Join Community</a></li>
+                        <li><a href="mentorship.html" class="hover:text-vibe-sage transition-colors">Mentorship</a></li>
+                        <li><a href="#bazaar" class="hover:text-vibe-sage transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="#subscribe" class="hover:text-vibe-sage transition-colors">Join Community</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Community</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#giving-circle" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
-                        <li><a href="blog.html" class="hover:text-vibe-teal transition-colors">Blog</a></li>
-                        <li><a href="youtube.html" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
-                        <li><a href="about.html" class="hover:text-vibe-teal transition-colors">About Us</a></li>
+                        <li><a href="#giving-circle" class="hover:text-vibe-sage transition-colors">Giving Circle</a></li>
+                        <li><a href="blog.html" class="hover:text-vibe-sage transition-colors">Blog</a></li>
+                        <li><a href="youtube.html" class="hover:text-vibe-sage transition-colors">YouTube</a></li>
+                        <li><a href="about.html" class="hover:text-vibe-sage transition-colors">About Us</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Vendors</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                        <li><a href="become-vendor.html" class="hover:text-vibe-sage transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">Support</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+            <div class="border-t border-vibe-brown-dark pt-8 text-center text-gray-400">
                 <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
             </div>
         </div>

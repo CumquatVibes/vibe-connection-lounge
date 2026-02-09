@@ -10,24 +10,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'vibe-teal': '#41e0d0',
-                        'vibe-teal-dark': '#0D9488',
+                        'vibe-sage': '#7C9885',
+                        'vibe-sage-dark': '#5A7A63',
+                        'vibe-sage-light': '#A8BFA8',
+                        'vibe-cream': '#F5F0E8',
+                        'vibe-olive': '#4A5D3A',
+                        'vibe-olive-dark': '#3A4D2E',
                         'vibe-purple': '#442e66',
-                        'vibe-purple-dark': '#2d1e44',
-                        'vibe-orange': '#ffb088',
-                        'vibe-orange-dark': '#eb7e43',
-                        'vibe-gold': '#ffb606',
-                        'vibe-cream': '#FAF8F3',
+                        'vibe-orange': '#D4956A',
+                        'vibe-orange-dark': '#B87A4F',
+                        'vibe-gold': '#C4A96A',
+                        'vibe-brown': '#3D2E1F',
+                        'vibe-brown-dark': '#2A1F14',
                     },
                     fontFamily: {
-                        'serif': ['Lusitana', 'Georgia', 'serif'],
+                        'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
                         'sans': ['Manrope', 'system-ui', 'sans-serif'],
                     },
                 }
@@ -45,7 +49,7 @@
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Lusitana', serif;
+            font-family: 'Cormorant Garamond', serif;
         }
 
         .transition-all {
@@ -70,43 +74,43 @@
 
     <!-- Tropical plant accents scattered in background -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <svg class="absolute -top-4 -left-8 w-48 h-48 text-green-700 opacity-[0.04]" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute -top-4 -left-8 w-48 h-48 text-vibe-olive opacity-[0.04]" viewBox="0 0 200 200" fill="currentColor">
             <path d="M40 180 C30 140, 20 100, 40 60 C50 40, 70 20, 100 10 C90 40, 85 70, 90 100 C60 90, 45 110, 40 180Z"/>
             <path d="M90 100 C95 70, 105 50, 100 10 C120 30, 130 60, 120 100 C110 80, 100 85, 90 100Z"/>
         </svg>
-        <svg class="absolute top-[30%] -right-6 w-56 h-56 text-green-700 opacity-[0.035] rotate-[160deg]" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute top-[30%] -right-6 w-56 h-56 text-vibe-olive opacity-[0.035] rotate-[160deg]" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 190 C95 150, 80 110, 50 80 C40 70, 25 65, 10 70 C30 60, 55 55, 80 65 C70 50, 55 35, 30 25 C55 25, 75 35, 90 55 C85 40, 75 20, 60 5 C80 15, 95 35, 100 60 C105 35, 120 15, 140 5 C125 20, 115 40, 110 55 C125 35, 145 25, 170 25 C145 35, 130 50, 120 65 C145 55, 170 60, 190 70 C175 65, 160 70, 150 80 C120 110, 105 150, 100 190Z"/>
         </svg>
-        <svg class="absolute bottom-[15%] -left-4 w-40 h-40 text-green-700 opacity-[0.03] rotate-12" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute bottom-[15%] -left-4 w-40 h-40 text-vibe-olive opacity-[0.03] rotate-12" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 190 C98 160, 90 130, 75 105 C65 100, 50 100, 40 105 C55 95, 65 90, 75 95 C65 80, 50 70, 35 65 C55 65, 70 72, 80 85 C75 65, 65 50, 50 40 C70 45, 82 58, 88 75 C86 55, 80 35, 70 20 C85 30, 92 50, 95 75 C95 55, 100 35, 110 20 C108 40, 102 60, 100 80 C110 60, 118 45, 135 40 C122 52, 112 65, 105 80 C115 72, 130 65, 145 65 C130 72, 118 80, 110 90 C120 88, 135 90, 150 95 C135 95, 120 98, 110 105 C120 115, 105 140, 100 190Z"/>
         </svg>
-        <svg class="absolute bottom-[40%] -right-2 w-32 h-32 text-green-700 opacity-[0.03] -rotate-45" viewBox="0 0 100 100" fill="currentColor">
+        <svg class="absolute bottom-[40%] -right-2 w-32 h-32 text-vibe-olive opacity-[0.03] -rotate-45" viewBox="0 0 100 100" fill="currentColor">
             <path d="M50 95 C48 70, 35 50, 15 35 C35 38, 48 50, 50 65 C52 50, 65 38, 85 35 C65 50, 52 70, 50 95Z"/>
         </svg>
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
+    <nav class="bg-vibe-cream/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center space-x-3">
                     <!-- VCL Vine & Lotus Logo -->
                     <img src="images/vcl-logo.svg" alt="Vibe Connection Lounge logo" width="120" height="44" class="flex-shrink-0">
                     <span class="text-2xl font-serif font-bold">
-                        <span class="text-vibe-purple italic">Vibe</span>
+                        <span class="text-vibe-olive italic">Vibe</span>
                         <span class="text-gray-800"> Connection Lounge</span>
                     </span>
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html#mission" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Mission</a>
-                    <a href="mentorship.html" class="text-vibe-purple hover:text-vibe-purple-dark transition-colors font-bold">Mentorship</a>
-                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Bazaar</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">Blog</a>
-                    <a href="youtube.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">YouTube</a>
-                    <a href="about.html" class="text-gray-700 hover:text-vibe-purple transition-colors font-medium">About</a>
+                    <a href="index.html#mission" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">Mission</a>
+                    <a href="mentorship.html" class="text-vibe-olive hover:text-vibe-olive-dark transition-colors font-bold">Mentorship</a>
+                    <a href="index.html#bazaar" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">Bazaar</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">Blog</a>
+                    <a href="youtube.html" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">YouTube</a>
+                    <a href="about.html" class="text-gray-700 hover:text-vibe-sage-dark transition-colors font-medium">About</a>
                 </div>
                 <div class="flex gap-3">
-                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-teal text-white px-6 py-2 rounded-full hover:bg-vibe-teal-dark transition-all hover-lift font-medium shadow-lg">
+                    <a href="giving.html" class="hidden sm:inline-block bg-vibe-sage text-white px-6 py-2 rounded-full hover:bg-vibe-sage-dark transition-all hover-lift font-medium shadow-lg">
                         Give
                     </a>
                     <a href="index.html#subscribe" class="hidden sm:inline-block bg-vibe-orange text-white px-6 py-2 rounded-full hover:bg-vibe-orange-dark transition-all hover-lift font-medium shadow-lg">
@@ -118,18 +122,18 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white py-20 relative overflow-hidden">
+    <section class="bg-gradient-to-br from-vibe-olive to-vibe-olive-dark text-white py-20 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-20 left-10 w-64 h-64 bg-vibe-teal rounded-full blur-3xl"></div>
+            <div class="absolute top-20 left-10 w-64 h-64 bg-vibe-sage rounded-full blur-3xl"></div>
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-vibe-orange rounded-full blur-3xl"></div>
-            <div class="absolute top-0 right-0 w-80 h-80 bg-green-500 rounded-full blur-3xl"></div>
+            <div class="absolute top-0 right-0 w-80 h-80 bg-vibe-sage rounded-full blur-3xl"></div>
         </div>
         <!-- Tropical leaf SVG accents -->
-        <svg class="absolute top-0 left-0 w-48 h-48 text-green-500 opacity-10 -translate-x-8 -translate-y-8" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute top-0 left-0 w-48 h-48 text-vibe-sage opacity-10 -translate-x-8 -translate-y-8" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 10 Q60 60 20 100 Q60 80 100 100 Q80 60 100 10Z"/>
             <path d="M120 30 Q90 70 50 120 Q90 95 120 120 Q100 75 120 30Z"/>
         </svg>
-        <svg class="absolute bottom-0 right-0 w-48 h-48 text-green-500 opacity-10 translate-x-8 translate-y-8 rotate-180" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute bottom-0 right-0 w-48 h-48 text-vibe-sage opacity-10 translate-x-8 translate-y-8 rotate-180" viewBox="0 0 200 200" fill="currentColor">
             <path d="M100 10 Q60 60 20 100 Q60 80 100 100 Q80 60 100 10Z"/>
             <path d="M120 30 Q90 70 50 120 Q90 95 120 120 Q100 75 120 30Z"/>
         </svg>
@@ -139,7 +143,7 @@
             </div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Emotional Release &<br>
-                <span class="italic text-vibe-teal">Life Recalibration</span>
+                <span class="italic text-vibe-sage-light">Life Recalibration</span>
             </h1>
             <p class="text-xl md:text-2xl mb-4 text-white/90">A Sacred Mentorship Program</p>
             <p class="text-lg text-white/70 max-w-2xl mx-auto">
@@ -151,8 +155,8 @@
     <!-- Meet Your Mentor Section -->
     <section class="py-24 bg-white relative overflow-hidden">
         <!-- Subtle tropical background -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-green-100/40 to-transparent rounded-full -translate-y-1/2 translate-x-1/3"></div>
-        <div class="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-vibe-teal/5 to-transparent rounded-full translate-y-1/2 -translate-x-1/3"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-vibe-sage-light/20 to-transparent rounded-full -translate-y-1/2 translate-x-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-vibe-sage/5 to-transparent rounded-full translate-y-1/2 -translate-x-1/3"></div>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <!-- Mentor Image -->
@@ -161,16 +165,16 @@
                         <img src="images/mentor-tree.jpg" alt="Your mentor surrounded by lush island greenery" class="w-full h-full object-cover object-top">
                     </div>
                     <!-- Decorative leaf accent -->
-                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full opacity-20 blur-xl"></div>
-                    <div class="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-vibe-teal to-green-400 rounded-full opacity-20 blur-xl"></div>
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-vibe-sage to-vibe-sage-dark rounded-full opacity-20 blur-xl"></div>
+                    <div class="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-vibe-sage-light to-vibe-sage rounded-full opacity-20 blur-xl"></div>
                 </div>
 
                 <!-- Mentor Bio -->
                 <div>
-                    <h2 class="text-4xl font-bold text-vibe-purple mb-6">Meet Your Mentor</h2>
+                    <h2 class="text-4xl font-bold text-vibe-olive mb-6">Meet Your Mentor</h2>
                     <div class="space-y-4 text-gray-700 leading-relaxed">
                         <p>
-                            I am a <strong class="text-vibe-purple">holistic wellness coach</strong>, <strong class="text-vibe-teal">alchemist</strong>, and <strong class="text-vibe-orange">spiritual teacher</strong>. I specialize in emotional awareness, nervous system regulation, and embodied healing.
+                            I am a <strong class="text-vibe-olive">holistic wellness coach</strong>, <strong class="text-vibe-sage">alchemist</strong>, and <strong class="text-vibe-orange">spiritual teacher</strong>. I specialize in emotional awareness, nervous system regulation, and embodied healing.
                         </p>
                         <p>
                             With experience in herbalism and naturopathic principles, my work integrates grounding science, spiritual wisdom, and intuitive guidance to support deep, lasting transformation. I hold calm, trauma-aware spaces where clients can safely release emotional patterns and reconnect with themselves in a sustainable, honest way.
@@ -191,19 +195,19 @@
     </section>
 
     <!-- Tropical Divider -->
-    <div class="bg-gradient-to-r from-green-600 via-vibe-teal to-green-600 h-1 opacity-30"></div>
+    <div class="bg-gradient-to-r from-vibe-sage via-vibe-sage-dark to-vibe-sage h-1 opacity-30"></div>
 
     <!-- The Experience Section -->
     <section class="py-24 bg-vibe-cream relative overflow-hidden">
         <!-- Island leaf accents -->
-        <svg class="absolute top-12 right-0 w-36 h-36 text-green-600 opacity-[0.06]" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute top-12 right-0 w-36 h-36 text-vibe-sage opacity-[0.06]" viewBox="0 0 200 200" fill="currentColor">
             <path d="M180 20 Q120 80 60 140 Q120 110 160 140 Q140 80 180 20Z"/>
         </svg>
-        <svg class="absolute bottom-12 left-0 w-36 h-36 text-green-600 opacity-[0.06] rotate-180" viewBox="0 0 200 200" fill="currentColor">
+        <svg class="absolute bottom-12 left-0 w-36 h-36 text-vibe-sage opacity-[0.06] rotate-180" viewBox="0 0 200 200" fill="currentColor">
             <path d="M180 20 Q120 80 60 140 Q120 110 160 140 Q140 80 180 20Z"/>
         </svg>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl md:text-5xl font-bold text-center text-vibe-purple mb-6">This Work Supports You In</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-vibe-olive mb-6">This Work Supports You In</h2>
             <p class="text-center text-gray-600 mb-16 text-xl max-w-3xl mx-auto">
                 Through guided emotional release, nervous-system regulation, and spiritual integration, you'll learn how to clear stagnant energy, strengthen intuition, and create energetic boundaries that allow you to stay grounded, open, and sovereign.
             </p>
@@ -211,10 +215,10 @@
             <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl mb-12">
                 <ul class="space-y-5">
                     <li class="flex items-start gap-4">
-                        <span class="mt-1 w-8 h-8 rounded-full bg-vibe-teal/20 flex items-center justify-center flex-shrink-0">
-                            <span class="text-vibe-teal text-lg">&#10003;</span>
+                        <span class="mt-1 w-8 h-8 rounded-full bg-vibe-sage/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-vibe-sage text-lg">&#10003;</span>
                         </span>
-                        <p class="text-xl text-gray-700 leading-relaxed">Releasing stored emotions and <strong class="text-vibe-teal">energetic residue</strong></p>
+                        <p class="text-xl text-gray-700 leading-relaxed">Releasing stored emotions and <strong class="text-vibe-sage">energetic residue</strong></p>
                     </li>
                     <li class="flex items-start gap-4">
                         <span class="mt-1 w-8 h-8 rounded-full bg-vibe-orange/20 flex items-center justify-center flex-shrink-0">
@@ -223,16 +227,16 @@
                         <p class="text-xl text-gray-700 leading-relaxed">Regulating your nervous system and <strong class="text-vibe-orange">restoring inner calm</strong></p>
                     </li>
                     <li class="flex items-start gap-4">
-                        <span class="mt-1 w-8 h-8 rounded-full bg-vibe-purple/20 flex items-center justify-center flex-shrink-0">
-                            <span class="text-vibe-purple text-lg">&#10003;</span>
+                        <span class="mt-1 w-8 h-8 rounded-full bg-vibe-olive/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-vibe-olive text-lg">&#10003;</span>
                         </span>
-                        <p class="text-xl text-gray-700 leading-relaxed">Understanding and <strong class="text-vibe-purple">protecting your energetic field</strong></p>
+                        <p class="text-xl text-gray-700 leading-relaxed">Understanding and <strong class="text-vibe-olive">protecting your energetic field</strong></p>
                     </li>
                     <li class="flex items-start gap-4">
-                        <span class="mt-1 w-8 h-8 rounded-full bg-vibe-teal/20 flex items-center justify-center flex-shrink-0">
-                            <span class="text-vibe-teal text-lg">&#10003;</span>
+                        <span class="mt-1 w-8 h-8 rounded-full bg-vibe-sage/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-vibe-sage text-lg">&#10003;</span>
                         </span>
-                        <p class="text-xl text-gray-700 leading-relaxed">Navigating people, relationships, and environments <strong class="text-vibe-teal">without energetic drain</strong></p>
+                        <p class="text-xl text-gray-700 leading-relaxed">Navigating people, relationships, and environments <strong class="text-vibe-sage">without energetic drain</strong></p>
                     </li>
                     <li class="flex items-start gap-4">
                         <span class="mt-1 w-8 h-8 rounded-full bg-vibe-orange/20 flex items-center justify-center flex-shrink-0">
@@ -243,20 +247,20 @@
                 </ul>
             </div>
 
-            <div class="bg-gradient-to-br from-vibe-purple/5 to-vibe-teal/5 rounded-3xl p-8 md:p-12 border border-vibe-purple/10 mb-12">
+            <div class="bg-gradient-to-br from-vibe-olive/5 to-vibe-sage/5 rounded-3xl p-8 md:p-12 border border-vibe-olive/10 mb-12">
                 <p class="text-xl text-gray-700 leading-relaxed text-center italic">
-                    Over 12 weeks, you'll gently shift from emotional overwhelm and energetic sensitivity into <strong class="text-vibe-purple">clarity</strong>, <strong class="text-vibe-teal">stability</strong>, and <strong class="text-vibe-orange">embodied self-trust</strong> — not by fixing yourself, but by releasing what was never yours to carry.
+                    Over 12 weeks, you'll gently shift from emotional overwhelm and energetic sensitivity into <strong class="text-vibe-olive">clarity</strong>, <strong class="text-vibe-sage">stability</strong>, and <strong class="text-vibe-orange">embodied self-trust</strong> — not by fixing yourself, but by releasing what was never yours to carry.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift text-center">
-                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vibe-teal/20 flex items-center justify-center">
-                        <svg class="w-8 h-8 text-vibe-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vibe-sage/20 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-vibe-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-vibe-purple mb-3">Emotional Awareness</h3>
+                    <h3 class="text-xl font-bold text-vibe-olive mb-3">Emotional Awareness</h3>
                     <p class="text-gray-600">Deep understanding of your emotional patterns and how they shape your experience.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift text-center">
@@ -265,16 +269,16 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-vibe-purple mb-3">Nervous System Regulation</h3>
+                    <h3 class="text-xl font-bold text-vibe-olive mb-3">Nervous System Regulation</h3>
                     <p class="text-gray-600">Tools and practices for grounding, safety, and sustainable well-being.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover-lift text-center">
-                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vibe-purple/20 flex items-center justify-center">
-                        <svg class="w-8 h-8 text-vibe-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vibe-olive/20 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-vibe-olive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-vibe-purple mb-3">Energetic Alignment</h3>
+                    <h3 class="text-xl font-bold text-vibe-olive mb-3">Energetic Alignment</h3>
                     <p class="text-gray-600">Reconnect with your authentic self and find inner stability.</p>
                 </div>
             </div>
@@ -282,7 +286,7 @@
     </section>
 
     <!-- Investment Section -->
-    <section class="py-24 bg-gradient-to-br from-vibe-purple to-vibe-purple-dark text-white">
+    <section class="py-24 bg-gradient-to-br from-vibe-olive to-vibe-olive-dark text-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">Your Investment</h2>
             <p class="text-center text-white/80 mb-16 text-xl">
@@ -293,7 +297,7 @@
                 <!-- Pay in Full -->
                 <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all">
                     <div class="text-center">
-                        <div class="inline-block bg-vibe-teal px-4 py-1 rounded-full text-sm font-bold mb-4 text-white">
+                        <div class="inline-block bg-vibe-sage px-4 py-1 rounded-full text-sm font-bold mb-4 text-white">
                             BEST VALUE
                         </div>
                         <h3 class="text-2xl font-bold mb-2">Pay in Full</h3>
@@ -301,19 +305,19 @@
                         <p class="text-white/70 mb-6">One-time payment</p>
                         <ul class="text-left space-y-3 mb-8">
                             <li class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span class="text-vibe-sage-light text-xl">&#10003;</span>
                                 <span>Full 12-week program access</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span class="text-vibe-sage-light text-xl">&#10003;</span>
                                 <span>1-on-1 mentorship sessions</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span class="text-vibe-sage-light text-xl">&#10003;</span>
                                 <span>Ongoing support between sessions</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-vibe-teal text-xl">&#10003;</span>
+                                <span class="text-vibe-sage-light text-xl">&#10003;</span>
                                 <span>Save $300 vs. payment plan</span>
                             </li>
                         </ul>
@@ -350,7 +354,7 @@
                                 <span>Spread investment over 3 months</span>
                             </li>
                         </ul>
-                        <a href="#apply" class="block w-full bg-white text-vibe-purple px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-bold text-lg shadow-2xl text-center">
+                        <a href="#apply" class="block w-full bg-white text-vibe-olive px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-bold text-lg shadow-2xl text-center">
                             Apply Now
                         </a>
                     </div>
@@ -362,17 +366,17 @@
     <!-- Is This For You Section -->
     <section class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold text-vibe-purple mb-8">Is This Mentorship For You?</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-vibe-olive mb-8">Is This Mentorship For You?</h2>
             <p class="text-xl text-gray-700 leading-relaxed mb-12">
                 This is a sacred mentorship program for those ready to release emotional weight, recalibrate their energy, and move through life without absorbing everyone else's vibration. If you're no longer seeking quick fixes and are ready for lasting transformation — this is for you.
             </p>
 
-            <div class="bg-gradient-to-br from-vibe-cream to-white rounded-3xl p-8 md:p-12 border border-vibe-purple/10">
-                <p class="text-2xl md:text-3xl font-serif text-vibe-purple italic mb-6">
+            <div class="bg-gradient-to-br from-vibe-cream to-white rounded-3xl p-8 md:p-12 border border-vibe-olive/10">
+                <p class="text-2xl md:text-3xl font-serif text-vibe-olive italic mb-6">
                     "If you are feeling called to this work, trust that pull."
                 </p>
                 <p class="text-xl text-gray-700">
-                    The right time is when your body and inner knowing says <strong class="text-vibe-teal">yes</strong>.
+                    The right time is when your body and inner knowing says <strong class="text-vibe-sage">yes</strong>.
                 </p>
             </div>
         </div>
@@ -401,12 +405,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-vibe-brown text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <h3 class="text-xl font-serif font-bold mb-4">
-                        <span class="text-vibe-teal italic">Vibe</span> Connection Lounge
+                        <span class="text-vibe-sage italic">Vibe</span> Connection Lounge
                     </h3>
                     <p class="text-gray-400 mb-4">Empower Your Mind, Body & Soul</p>
                     <a href="https://richardabreu.studio" target="_blank" class="inline-block text-xs text-gray-500 hover:text-vibe-orange transition-colors border border-gray-700 hover:border-vibe-orange px-3 py-1 rounded-full">
@@ -416,29 +420,29 @@
                 <div>
                     <h4 class="font-semibold mb-4">Explore</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="mentorship.html" class="hover:text-vibe-teal transition-colors">Mentorship</a></li>
-                        <li><a href="index.html#bazaar" class="hover:text-vibe-teal transition-colors">Vibe Bazaar</a></li>
-                        <li><a href="blog.html" class="hover:text-vibe-teal transition-colors">Blog</a></li>
+                        <li><a href="mentorship.html" class="hover:text-vibe-sage transition-colors">Mentorship</a></li>
+                        <li><a href="index.html#bazaar" class="hover:text-vibe-sage transition-colors">Vibe Bazaar</a></li>
+                        <li><a href="blog.html" class="hover:text-vibe-sage transition-colors">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Community</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="giving.html" class="hover:text-vibe-teal transition-colors">Giving Circle</a></li>
-                        <li><a href="youtube.html" class="hover:text-vibe-teal transition-colors">YouTube</a></li>
-                        <li><a href="about.html" class="hover:text-vibe-teal transition-colors">About Us</a></li>
+                        <li><a href="giving.html" class="hover:text-vibe-sage transition-colors">Giving Circle</a></li>
+                        <li><a href="youtube.html" class="hover:text-vibe-sage transition-colors">YouTube</a></li>
+                        <li><a href="about.html" class="hover:text-vibe-sage transition-colors">About Us</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Vendors</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="become-vendor.html" class="hover:text-vibe-teal transition-colors">Become a Seller</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Vendor Login</a></li>
-                        <li><a href="#" class="hover:text-vibe-teal transition-colors">Support</a></li>
+                        <li><a href="become-vendor.html" class="hover:text-vibe-sage transition-colors">Become a Seller</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">Vendor Login</a></li>
+                        <li><a href="#" class="hover:text-vibe-sage transition-colors">Support</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+            <div class="border-t border-vibe-brown-dark pt-8 text-center text-gray-400">
                 <p>&copy; 2024 Vibe Connection Lounge. All rights reserved.</p>
             </div>
         </div>
