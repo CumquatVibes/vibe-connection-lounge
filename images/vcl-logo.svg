@@ -1,65 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 70" fill="none">
-  <!-- VCL Logo: Open Lotus with Flowing Vine -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" fill="none">
+  <!-- VCL Logo: Refined Lotus with Elegant Vine -->
 
-  <!-- Left flowing vine -->
-  <g stroke="#5A7A63" stroke-width="2.2" stroke-linecap="round">
-    <path d="M12 42 C24 40, 36 36, 52 32"/>
-    <!-- Left leaf 1 -->
-    <path d="M24 38 C20 30, 26 24, 30 28 C28 34, 24 38, 24 38" fill="#5A7A63" opacity="0.35" stroke="none"/>
-    <path d="M24 38 C20 30, 26 24, 30 28"/>
-    <!-- Left leaf 2 -->
-    <path d="M38 34 C36 42, 40 48, 44 44 C42 38, 38 34, 38 34" fill="#5A7A63" opacity="0.35" stroke="none"/>
-    <path d="M38 34 C36 42, 40 48, 44 44"/>
+  <!-- Left vine -->
+  <g stroke="#5A7A63" stroke-width="1.2" stroke-linecap="round" fill="none">
+    <path d="M16 38 C28 36, 42 32, 58 28"/>
+    <!-- Leaf stems with simple curves -->
+    <path d="M28 35 C25 28, 30 23, 33 27"/>
+    <path d="M33 27 C30 31, 28 35, 28 35"/>
+    <path d="M40 32 C38 38, 42 43, 45 40"/>
+    <path d="M45 40 C42 37, 40 32, 40 32"/>
+    <path d="M52 29 C50 24, 54 20, 56 24"/>
+    <path d="M56 24 C54 27, 52 29, 52 29"/>
   </g>
 
-  <!-- Lotus Flower -->
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- Far left petal -->
-    <path d="M62 36 C56 22, 60 10, 68 4 C72 12, 72 26, 68 36"
-          fill="#5A7A63" opacity="0.18" stroke="#5A7A63" stroke-width="2"/>
+  <!-- Lotus Flower - elegant thin petals -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer left petal -->
+    <path d="M66 34 C62 20, 66 8, 72 2 C75 10, 74 24, 72 34"
+          stroke="#5A7A63" stroke-width="1.1" opacity="0.5"/>
 
-    <!-- Left petal -->
-    <path d="M72 34 C68 18, 74 6, 82 2 C86 10, 84 24, 80 34"
-          fill="#5A7A63" opacity="0.25" stroke="#5A7A63" stroke-width="2"/>
+    <!-- Inner left petal -->
+    <path d="M76 32 C73 16, 78 4, 84 0 C87 10, 85 22, 82 32"
+          stroke="#5A7A63" stroke-width="1.2" opacity="0.7"/>
 
     <!-- Center-left petal -->
-    <path d="M82 32 C80 14, 88 2, 94 0 C98 8, 96 22, 92 32"
-          fill="#5A7A63" opacity="0.35" stroke="#5A7A63" stroke-width="2"/>
+    <path d="M86 30 C84 12, 90 0, 96 -3 C99 8, 97 20, 94 30"
+          stroke="#5A7A63" stroke-width="1.3" opacity="0.85"/>
 
-    <!-- Center petal (tallest, orange accent) -->
-    <path d="M92 30 C92 12, 98 0, 104 -2 C110 4, 110 18, 108 30"
-          fill="#D4956A" opacity="0.3" stroke="#D4956A" stroke-width="2.2"/>
+    <!-- Center petal (terracotta accent) -->
+    <path d="M96 28 C95 10, 100 -2, 106 -4 C110 6, 109 18, 107 28"
+          stroke="#D4956A" stroke-width="1.4"/>
 
     <!-- Center-right petal -->
-    <path d="M108 32 C106 14, 114 2, 120 0 C124 10, 120 24, 116 32"
-          fill="#5A7A63" opacity="0.35" stroke="#5A7A63" stroke-width="2"/>
+    <path d="M108 30 C106 12, 112 0, 118 -3 C121 10, 118 22, 116 30"
+          stroke="#5A7A63" stroke-width="1.3" opacity="0.85"/>
 
-    <!-- Right petal -->
-    <path d="M118 34 C116 18, 122 6, 130 2 C134 12, 130 26, 126 34"
-          fill="#5A7A63" opacity="0.25" stroke="#5A7A63" stroke-width="2"/>
+    <!-- Inner right petal -->
+    <path d="M118 32 C116 16, 122 4, 128 0 C131 12, 128 24, 126 32"
+          stroke="#5A7A63" stroke-width="1.2" opacity="0.7"/>
 
-    <!-- Far right petal -->
-    <path d="M128 36 C126 22, 132 10, 140 4 C142 14, 140 28, 136 36"
-          fill="#5A7A63" opacity="0.18" stroke="#5A7A63" stroke-width="2"/>
+    <!-- Outer right petal -->
+    <path d="M128 34 C126 20, 130 8, 136 2 C138 12, 136 26, 134 34"
+          stroke="#5A7A63" stroke-width="1.1" opacity="0.5"/>
 
-    <!-- Lotus base/cup -->
-    <path d="M58 40 C72 48, 90 50, 100 50 C110 50, 128 48, 142 40"
-          fill="none" stroke="#5A7A63" stroke-width="2.4"/>
+    <!-- Lotus base - gentle cup -->
+    <path d="M62 38 C76 44, 92 46, 100 46 C108 46, 124 44, 138 38"
+          stroke="#5A7A63" stroke-width="1.3"/>
 
-    <!-- Inner glow dot -->
-    <circle cx="100" cy="24" r="3.5" fill="#D4956A" opacity="0.6"/>
+    <!-- Inner detail - small stamen dots -->
+    <circle cx="97" cy="22" r="1" fill="#D4956A" opacity="0.7"/>
+    <circle cx="100" cy="18" r="1.2" fill="#D4956A" opacity="0.5"/>
+    <circle cx="103" cy="22" r="1" fill="#D4956A" opacity="0.7"/>
   </g>
 
-  <!-- Right flowing vine -->
-  <g stroke="#5A7A63" stroke-width="2.2" stroke-linecap="round">
-    <path d="M146 32 C160 36, 172 40, 188 42"/>
-    <!-- Right leaf 1 -->
-    <path d="M160 36 C164 28, 170 26, 172 30 C168 34, 162 36, 160 36" fill="#5A7A63" opacity="0.35" stroke="none"/>
-    <path d="M160 36 C164 28, 170 26, 172 30"/>
-    <!-- Right leaf 2 -->
-    <path d="M178 42 C180 48, 186 50, 188 46 C184 42, 178 42, 178 42" fill="#5A7A63" opacity="0.35" stroke="none"/>
-    <path d="M178 42 C180 48, 186 50, 188 46"/>
-    <!-- End curl -->
-    <path d="M188 42 C194 42, 196 38, 194 34"/>
+  <!-- Right vine -->
+  <g stroke="#5A7A63" stroke-width="1.2" stroke-linecap="round" fill="none">
+    <path d="M142 28 C158 32, 172 36, 186 38"/>
+    <!-- Leaf stems -->
+    <path d="M152 31 C154 24, 160 22, 162 26"/>
+    <path d="M162 26 C159 29, 154 31, 152 31"/>
+    <path d="M166 34 C168 40, 174 41, 175 38"/>
+    <path d="M175 38 C172 36, 168 34, 166 34"/>
+    <!-- Elegant end tendril -->
+    <path d="M186 38 C190 38, 193 35, 192 31 C191 28, 188 28, 187 30"/>
   </g>
 </svg>
